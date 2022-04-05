@@ -18,7 +18,8 @@
   --lig: 75%;
   --second-hue: 219;
   --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
-  --first-color-alt: hsl(var(--first-hue), var(--sat), 71%); /* -4% */
+  --first-color-alt: hsl(var(--first-hue), var(--sat), 71%);
+  /* -4% */
   --title-color: hsl(var(--second-hue), 15%, 95%);
   --text-color: hsl(var(--second-hue), 8%, 75%);
   --text-color-light: hsl(var(--second-hue), 4%, 55%);
@@ -82,10 +83,13 @@ textarea {
 body {
   background-color: var(--body-color);
   color: var(--text-color);
-  transition: .4s; /* for light mode animation */
+  transition: .4s;
+  /* for light mode animation */
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: var(--title-color);
   font-weight: var(--font-semibold);
 }
@@ -141,7 +145,7 @@ img {
   padding: 4.5rem 0 1rem;
 }
 
-.section__title, 
+.section__title,
 .section__subtitle {
   text-align: center;
 }
@@ -159,7 +163,15 @@ img {
 }
 
 /*=============== HEADER & NAV===============*/
-
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  background-color: var(--first-color);
+  z-index: var(--z-fixed);
+}
 
 /* Active link */
 
