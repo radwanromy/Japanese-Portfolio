@@ -173,6 +173,20 @@ img {
   z-index: var(--z-fixed);
 }
 
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.nav__logo {
+  color: var(--first-color);
+  font-weight: var(--font-medium);
+  transition: .4s;
+}
+
 /* Active link */
 
 
