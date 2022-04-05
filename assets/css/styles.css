@@ -187,6 +187,11 @@ img {
   transition: .4s;
 }
 
+.nav__logo:hover {
+  color: var(--first-color-alt);
+}
+
+/* 17.52 */
 /* Active link */
 
 
