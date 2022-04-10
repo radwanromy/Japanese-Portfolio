@@ -338,7 +338,14 @@ img {
   transform: rotate(90deg) translate(16px, 3px);
 
 }
-
+.home__scroll{
+  color: var(--first-color);
+  right: -1.5rem;
+  bottom: 4rem;
+  display: grid;
+  row-gap: 2.25rem;
+  justify-items: center;
+}
 /*=============== BUTTONS ===============*/
 
 
