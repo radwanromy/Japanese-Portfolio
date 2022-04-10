@@ -98,6 +98,7 @@ ul {
   list-style: none;
 }
 
+
 li {
   display: inline-block;
   align-items: center;
@@ -136,7 +137,7 @@ img {
   max-width: 968px;
   margin-left: 1rem;
   margin-right: 1rem;
-  
+
 }
 
 .grid {
@@ -214,8 +215,10 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: auto;
 
 }
+
 
 .nav__link {
   color: var(--text-color);
@@ -223,7 +226,7 @@ img {
   padding: .4rem;
   display: flex;
   border-radius: 5rem;
-  align-items: center;
+
 
 }
 
@@ -339,7 +342,8 @@ img {
   transform: rotate(90deg) translate(16px, 3px);
 
 }
-.home__scroll{
+
+.home__scroll {
   color: var(--first-color);
   right: -1.5rem;
   bottom: 4rem;
@@ -347,13 +351,14 @@ img {
   row-gap: 2.25rem;
   justify-items: center;
 }
-.home__scroll-name{
+
+.home__scroll-name {
   font-size: var(--smaller-font-size);
-  transform: rotate(-90deg) ;
+  transform: rotate(-90deg);
 }
 
 /*=============== BUTTONS ===============*/
-.button{
+.button {
   display: inline-block;
   background-color: var(--first-color);
   color: var(--body-color);
@@ -363,7 +368,7 @@ img {
   transition: .4s;
 }
 
-
+/* 34.24 */
 /*=============== ABOUT ===============*/
 
 
