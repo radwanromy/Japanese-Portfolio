@@ -293,6 +293,23 @@ img {
   overflow: hidden;
 }
 
+.home__buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.home__social,
+.home__scroll{
+  position: absolute;
+}
+.home__social{
+  bottom: 5rem;
+  left: 0;
+  display: grid;
+  row-gap: .5rem;
+}
+
 /*=============== BUTTONS ===============*/
 
 
