@@ -346,6 +346,11 @@ img {
   row-gap: 2.25rem;
   justify-items: center;
 }
+.home__scroll-name{
+  font-size: var(--smaller-font-size);
+  transform: rotate(-90deg) ;
+}
+
 /*=============== BUTTONS ===============*/
 
 
