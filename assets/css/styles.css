@@ -100,6 +100,7 @@ ul {
 
 li {
   display: inline-block;
+  align-items: center;
 }
 
 
@@ -183,7 +184,6 @@ img {
   justify-content: space-between;
   align-items: center;
   list-style: none;
-
 }
 
 .nav__logo {
@@ -200,7 +200,7 @@ img {
 .nav__menu {
   position: fixed;
   bottom: 1rem;
-  background-color: hsl(var(--second-hue), 32%, 16%, .8);
+  background-color: hsla(var(--second-hue), 32%, 16%, .8);
   width: 90%;
   border-radius: 4rem;
   padding: 1rem 2.25rem;
