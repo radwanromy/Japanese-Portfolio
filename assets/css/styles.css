@@ -270,6 +270,18 @@ img {
   margin-bottom: 2.5rem;
 }
 
+.home__name{
+  font-size: var(--biggest-font-size);
+  /* font-weight: var(--font-semibold);
+  color: var(--first-color);
+  margin-bottom: 1rem; */
+}
+.home__img{
+  width: 160px;
+}
+.home__handle{
+  justify-self: center;
+}
 
 /*=============== BUTTONS ===============*/
 
