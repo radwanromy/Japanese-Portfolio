@@ -325,6 +325,13 @@ img {
   transition: .4s;
 }
 
+.home__social-link:hover {
+  background-color: var(--first-color);
+  color: rgb(255, 255, 255);
+}
+.home__social::after{
+  
+}
 /*=============== BUTTONS ===============*/
 
 
