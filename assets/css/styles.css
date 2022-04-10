@@ -190,6 +190,7 @@ img {
   color: var(--first-color);
   font-weight: var(--font-medium);
   transition: .4s;
+  align-items: center;
 }
 
 .nav__logo:hover {
@@ -205,7 +206,7 @@ img {
   border-radius: 4rem;
   padding: 1rem 2.25rem;
   backdrop-filter: blur(10px);
-
+  align-items: center;
 }
 
 .nav__list {
@@ -221,6 +222,7 @@ img {
   padding: .4rem;
   display: flex;
   border-radius: 5rem;
+  align-items: center;
 
 }
 
