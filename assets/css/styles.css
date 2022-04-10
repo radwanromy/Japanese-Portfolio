@@ -259,6 +259,18 @@ img {
   font-weight: var(--font-medium);
 }
 
+.home__greeting{
+  display: block;
+  color: var(--title-color);
+  margin-bottom: .25rem;
+}
+
+.home__education {
+  color: var(--text-color);
+  margin-bottom: 2.5rem;
+}
+
+
 /*=============== BUTTONS ===============*/
 
 
