@@ -134,7 +134,7 @@ img {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-  max-width: 968px;
+  max-width: 100%;
   margin-left: 1rem;
   margin-right: 1rem;
 
