@@ -204,20 +204,29 @@ img {
   position: fixed;
   bottom: 1rem;
   background-color: hsla(var(--second-hue), 32%, 16%, .8);
-  width: 90%;
+  /* width: 90%;
+   */
+  /* left: 43%; */
   border-radius: 4rem;
-  padding: 1rem 2.25rem;
+  padding: rem 2.25rem;
   backdrop-filter: blur(10px);
-  align-items: center;
+  /* align-items: center; */
+  /* align-items: right; */
+  /* justify-content: space-between; */
 }
 
 .nav__list {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   width: auto;
 
 }
+
+/* 
+.menufix {
+  position: center;
+} */
 
 
 .nav__link {
@@ -229,6 +238,14 @@ img {
 
 
 }
+
+/* .nav__menu {
+  align-items: center;
+}
+
+.nav__item {
+  align-items: center;
+} */
 
 .active-link {
   background: linear-gradient(180deg,
