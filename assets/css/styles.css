@@ -424,8 +424,15 @@ img {
   background-color: var(--container-color);
   border-radius: .75rem;
   padding: .75rem .5rem;
-  
+
 }
+
+.about__icon{
+  font-size: 1.5rem;
+  color: var(--first-color);
+  margin-bottom: .5rem;
+}
+
 
 /*=============== SKILLS ===============*/
 
