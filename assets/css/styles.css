@@ -438,7 +438,10 @@ img {
 
 }
 
-
+.about__subtitle{
+  font-size: var(--tiny-font-size);
+  
+}
 
 /*=============== SKILLS ===============*/
 
