@@ -252,15 +252,16 @@ img {
 }
 
 
-/* 17.52 */
+/* 43:20*/
 /* Active link */
 
 
 /* Change background header */
 
-.scroll-header{
+.scroll-header {
   box-shadow: 0 4px 4px hsla(0, 0%, 4%, .3);
 }
+
 /*=============== HOME ===============*/
 .home__container {
   position: relative;
