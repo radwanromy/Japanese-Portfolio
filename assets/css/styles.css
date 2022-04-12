@@ -433,6 +433,12 @@ img {
   margin-bottom: .5rem;
 }
 
+.about__title{
+  font-size: var(--small-font-size);
+
+}
+
+
 
 /*=============== SKILLS ===============*/
 
