@@ -204,7 +204,7 @@ img {
   position: fixed;
   bottom: 1rem;
   background-color: hsla(var(--second-hue), 32%, 16%, .8);
-  width:90%;
+  width: 90%;
   border-radius: 4rem;
   padding: 1rem 2.25rem;
   backdrop-filter: blur(10px);
@@ -380,11 +380,13 @@ img {
   font-weight: var(--font-medium);
   transition: .4s;
 }
-.button:hover{
+
+.button:hover {
   background-color: var(--first-color-alt);
   color: var(--body-color);
 }
-.button--ghost{
+
+.button--ghost {
   background-color: transparent;
   color: var(--first-color);
   border: 2px solid var(--first-color);
@@ -393,54 +395,61 @@ img {
   font-weight: var(--font-medium);
   transition: .4s; */
 }
-.about__container container grid{
+
+.about__container container grid {
   align-content: center;
 }
 
 
 /* 34.24 */
 /*=============== ABOUT ===============*/
-.about__container{
+.about__container {
   row-gap: 2.5rem;
 }
-.about__img{
+
+.about__img {
   width: 220px;
   border-radius: 1.5rem;
   justify-self: center;
 }
 
-.about__data{
+.about__data {
   text-align: center;
 }
-.about__info{
+
+.about__info {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: .5rem;
   margin-bottom: 2rem;
 
 }
 
-.about__box{
+.about__box {
   background-color: var(--container-color);
   border-radius: .75rem;
   padding: .75rem .5rem;
 
 }
 
-.about__icon{
+.about__icon {
   font-size: 1.5rem;
   color: var(--first-color);
   margin-bottom: .5rem;
 }
 
-.about__title{
+.about__title {
   font-size: var(--small-font-size);
 
 }
 
-.about__subtitle{
+.about__subtitle {
   font-size: var(--tiny-font-size);
-  
+
+}
+
+.about__description {
+  margin-bottom: 2rem;
 }
 
 /*=============== SKILLS ===============*/
