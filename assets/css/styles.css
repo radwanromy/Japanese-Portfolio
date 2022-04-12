@@ -258,7 +258,9 @@ img {
 
 /* Change background header */
 
-
+.scroll-header{
+  box-shadow: 0 4px 4px hsla(0, 0%, 4%, .3);
+}
 /*=============== HOME ===============*/
 .home__container {
   position: relative;
