@@ -204,16 +204,11 @@ img {
   position: fixed;
   bottom: 1rem;
   background-color: hsla(var(--second-hue), 32%, 16%, .8);
-  
-  
-  /* left: 43%; */
+  width:90%;
   border-radius: 4rem;
   padding: 1rem 2.25rem;
-  align-self: center;
   backdrop-filter: blur(10px);
-  /* align-items: center; */
-  /* align-items: right; */
-  /* justify-content: space-between; */
+  justify-content: space-between;
 }
 
 .nav__list {
@@ -401,13 +396,29 @@ img {
 .about__container container grid{
   align-content: center;
 }
-.about__img {
-  width: 160px;
-  align-content: center;
-}
+
 
 /* 34.24 */
 /*=============== ABOUT ===============*/
+.about__container{
+  row-gap: 2.5rem;
+}
+.about__img{
+  width: 220px;
+  border-radius: 1.5rem;
+  justify-self: center;
+}
+
+.about__data{
+  text-align: center;
+}
+.about__info{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: .5rem;
+  margin-bottom: 2rem;
+
+}
 
 
 /*=============== SKILLS ===============*/
