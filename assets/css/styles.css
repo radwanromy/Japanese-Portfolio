@@ -398,6 +398,14 @@ img {
   font-weight: var(--font-medium);
   transition: .4s; */
 }
+.about__container container grid{
+  align-content: center;
+}
+.about__img {
+  width: 160px;
+  align-content: center;
+}
+
 /* 34.24 */
 /*=============== ABOUT ===============*/
 
