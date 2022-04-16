@@ -485,6 +485,16 @@ img {
   align-content: flex-start;
   row-gap: 1rem;
 }
+.skills__date{
+  display: flex;
+  column-gap: .5rem;
+}
+
+.skills .bxs-badge-check{
+  font-size: 1rem;
+  color: var(--first-color);
+}
+
 /*=============== SERVICES ===============*/
 
 
