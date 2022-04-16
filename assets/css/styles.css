@@ -477,9 +477,13 @@ img {
 .skills__box{
   display: flex;
   justify-content: center;
-  column-gap: 2.8rem
-  ;
+  column-gap: 2.5rem;
 
+}
+.skills__group{
+  display: grid;
+  align-content: flex-start;
+  row-gap: 1rem;
 }
 /*=============== SERVICES ===============*/
 
