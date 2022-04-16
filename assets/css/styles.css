@@ -494,7 +494,11 @@ img {
   font-size: 1rem;
   color: var(--first-color);
 }
-
+.skills__namae{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  line-height: 18px;
+}
 /*=============== SERVICES ===============*/
 
 
