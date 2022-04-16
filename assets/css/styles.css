@@ -457,11 +457,11 @@ img {
 
 /*=============== SKILLS ===============*/
 
-.skillss___container{
-  row-gap:2rrem;
+.skills__container{
+  row-gap:2rem;
   padding-top:1rem;
 }
-.skillss___contentt{
+.skills__content{
   background-color:var(--container-color);
   padding: 1.5rem;
   border-radius: 1.25rem;
@@ -498,6 +498,10 @@ img {
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
   line-height: 18px;
+}
+.skills__level{
+
+  font-size: var(--tiny-font-size);
 }
 /*=============== SERVICES ===============*/
 
