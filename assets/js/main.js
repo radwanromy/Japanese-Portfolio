@@ -8,7 +8,13 @@ function scrollHeader() {
 window.addEventListener('scroll', scrollHeader)
 
 /*=============== SERVICES MODAL ===============*/
+const modalViews = document.querySelectorAll('.services__model'),
+modalBtns = document.querySelectorAll('.services__button'),
+modalClose = document.querySelector('.services__modal-close')
 
+let modal = function(modalClick){
+    modalViews[modalClick].classList.add('active-modal')
+}
 
 /*=============== MIXITUP FILTER PORTFOLIO ===============*/
 
