@@ -562,6 +562,13 @@ img {
   z-index: var(--z-modal);
 }
 
+.services__model-content{
+  position: relative;
+  background-color: var(--body-color);
+  border-radius: 1.5rem;
+  padding: 4.5rem 1.5rem 2.5rem;
+}
+
 
 /*Active modal*/
 
