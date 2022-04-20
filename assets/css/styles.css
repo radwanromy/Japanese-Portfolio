@@ -589,6 +589,12 @@ img {
   gap: .75rem;
 }
 
+.services__model-item{
+  display:flex;
+  align-items: flex-start;
+  column-gap: .5rem;
+}
+
 
 
 /*Active modal*/
