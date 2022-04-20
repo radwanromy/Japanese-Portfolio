@@ -594,7 +594,10 @@ img {
   align-items: flex-start;
   column-gap: .5rem;
 }
-
+.services__model-icon{
+  font-size: 1.5rem;
+  color: var(--first-color);
+}
 
 
 /*Active modal*/
