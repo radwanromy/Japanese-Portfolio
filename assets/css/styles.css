@@ -549,6 +549,19 @@ img {
 
 /* Services modal */
 
+.services__model{
+  position: fixed;
+  inset: 0;
+  background-color: hsla(var(--second-hue), 28%, 16%, .7);
+  padding: 2rem 1rem;
+  display: grid;
+  place-items: center;
+  /* visibility: hidden;
+  opacity: 0; */
+  transition: .4s;
+  z-index: var(--z-modal);
+}
+
 
 /*Active modal*/
 
