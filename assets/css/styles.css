@@ -541,6 +541,11 @@ img {
   transform: translate(.25rem);
 }
 
+.services__icon{
+  font-size: 1rem;
+  transition: .4s;
+}
+
 
 /* Services modal */
 
