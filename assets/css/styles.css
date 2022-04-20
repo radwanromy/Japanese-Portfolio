@@ -598,6 +598,9 @@ img {
   font-size: 1.5rem;
   color: var(--first-color);
 }
+.services__model-info{
+  font-size: var(--small-font-size);
+}
 
 
 /*Active modal*/
