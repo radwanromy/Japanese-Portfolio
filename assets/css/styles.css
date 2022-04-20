@@ -569,6 +569,11 @@ img {
   padding: 4.5rem 1.5rem 2.5rem;
 }
 
+.services__model-title{
+  font-size: var(--h3-font-size);
+  color: var(--first-color);
+  margin-bottom: 1rem;
+}
 
 /*Active modal*/
 
