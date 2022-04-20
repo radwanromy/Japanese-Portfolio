@@ -611,7 +611,10 @@ img {
 }
 /*Active modal*/
 
-
+.active-modal{
+  visibility: visible;
+  opacity: 1;
+}
 /*=============== WORK ===============*/
 
 
