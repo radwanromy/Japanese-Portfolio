@@ -10,11 +10,13 @@ window.addEventListener('scroll', scrollHeader)
 /*=============== SERVICES MODAL ===============*/
 const modalViews = document.querySelectorAll('.services__model'),
     modalBtns = document.querySelectorAll('.services__button'),
-    modalClose = document.querySelector('.services__modal-close')
+    modalClose = document.querySelectorAll('.services__model-close')
 
 let modal = function (modalClick) {
     modalViews[modalClick].classList.add('active-modal')
 }
+
+
 
 modalBtns.forEach((mb, i) => {
     mb.addEventListener('click', () => {
@@ -22,6 +24,13 @@ modalBtns.forEach((mb, i) => {
     })
 })
 
+modalClose.forEach((mc) => {
+    mc.addEventListener('click', () => {
+        modalViews.forEach((mv) => {
+            mv.classList.remove('active-modal')
+        })
+    })
+})
 /*=============== MIXITUP FILTER PORTFOLIO ===============*/
 
 

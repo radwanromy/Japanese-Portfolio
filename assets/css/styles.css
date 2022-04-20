@@ -511,25 +511,25 @@ img {
 }
 
 /*=============== SERVICES ===============*/
-.services__container{
-  grid-template-columns: repeat(2,1fr);
+.services__container {
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
   padding-top: 1rem;
 }
 
-.services__card{
+.services__card {
   background-color: var(--container-color);
   border-radius: 1rem;
   padding: 3rem 1.5rem 1.5rem;
 }
 
-.services__title{
+.services__title {
   font-size: var(--h3-font-size);
 
   margin-bottom: 2.5rem;
 }
 
-.services__button{
+.services__button {
   color: var(--first-color);
   font-size: var(--small-font-size);
   display: flex;
@@ -537,11 +537,12 @@ img {
   column-gap: .25rem;
   cursor: pointer;
 }
-.services__button:hover .services__icon{
+
+.services__button:hover .services__icon {
   transform: translate(.25rem);
 }
 
-.services__icon{
+.services__icon {
   font-size: 1rem;
   transition: .4s;
 }
@@ -549,7 +550,7 @@ img {
 
 /* Services modal */
 
-.services__model{
+.services__model {
   position: fixed;
   inset: 0;
   background-color: hsla(var(--second-hue), 28%, 16%, .7);
@@ -562,46 +563,50 @@ img {
   z-index: var(--z-modal);
 }
 
-.services__model-content{
+.services__model-content {
   position: relative;
   background-color: var(--body-color);
   border-radius: 1.5rem;
   padding: 4.5rem 1.5rem 2.5rem;
 }
+
 .services__model-title,
-.services__model-description{
+.services__model-description {
   text-align: center;
 }
 
-.services__model-title{
+.services__model-title {
   font-size: var(--h3-font-size);
   color: var(--first-color);
   margin-bottom: 1rem;
 }
 
-.services__model-description{
+.services__model-description {
   font-size: var(--small-font-size);
   margin-bottom: 2rem;
 }
 
-.services__model-list{
+.services__model-list {
   display: grid;
   gap: .75rem;
 }
 
-.services__model-item{
-  display:flex;
+.services__model-item {
+  display: flex;
   align-items: flex-start;
   column-gap: .5rem;
 }
-.services__model-icon{
+
+.services__model-icon {
   font-size: 1.5rem;
   color: var(--first-color);
 }
-.services__model-info{
+
+.services__model-info {
   font-size: var(--small-font-size);
 }
-.services__model-close{
+
+.services__model-close {
   position: absolute;
   top: 1.5rem;
   right: 1.5rem;
@@ -609,12 +614,14 @@ img {
   color: var(--first-color);
   cursor: pointer;
 }
+
 /*Active modal*/
 
-.active-modal{
+.active-modal {
   visibility: visible;
   opacity: 1;
 }
+
 /*=============== WORK ===============*/
 
 
