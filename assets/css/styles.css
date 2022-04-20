@@ -579,6 +579,11 @@ img {
   margin-bottom: 1rem;
 }
 
+.services__model-description{
+  font-size: var(--small-font-size);
+  margin-bottom: 2rem;
+}
+
 /*Active modal*/
 
 
