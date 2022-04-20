@@ -568,6 +568,10 @@ img {
   border-radius: 1.5rem;
   padding: 4.5rem 1.5rem 2.5rem;
 }
+.services__model-title,
+.services__model-description{
+  text-align: center;
+}
 
 .services__model-title{
   font-size: var(--h3-font-size);
