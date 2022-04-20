@@ -556,8 +556,8 @@ img {
   padding: 2rem 1rem;
   display: grid;
   place-items: center;
-  /* visibility: hidden;
-  opacity: 0; */
+  visibility: hidden;
+  opacity: 0;
   transition: .4s;
   z-index: var(--z-modal);
 }
@@ -601,8 +601,14 @@ img {
 .services__model-info{
   font-size: var(--small-font-size);
 }
-
-
+.services__model-close{
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--first-color);
+  cursor: pointer;
+}
 /*Active modal*/
 
 
