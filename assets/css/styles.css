@@ -537,6 +537,9 @@ img {
   column-gap: .25rem;
   cursor: pointer;
 }
+.services__button:hover .services__icon{
+  transform: translate(.25rem);
+}
 
 
 /* Services modal */
