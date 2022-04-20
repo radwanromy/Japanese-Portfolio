@@ -584,6 +584,13 @@ img {
   margin-bottom: 2rem;
 }
 
+.services__model-list{
+  display: grid;
+  gap: .75rem;
+}
+
+
+
 /*Active modal*/
 
 
