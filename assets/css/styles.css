@@ -517,6 +517,12 @@ img {
   padding-top: 1rem;
 }
 
+.services__card{
+  background-color: var(--container-color);
+  border-radius: 1rem;
+  padding: 3rem 1.5rem 1.5rem;
+}
+
 
 /* Services modal */
 
