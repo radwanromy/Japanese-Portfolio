@@ -623,7 +623,9 @@ img {
 }
 
 /*=============== WORK ===============*/
-
+.work__container{
+  padding-top: 1rem;
+}
 
 /* Active item work*/
 
