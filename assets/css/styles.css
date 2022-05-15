@@ -654,7 +654,11 @@ img {
   margin-bottom: .75rem;
 }
 
-
+.work__title {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: .25rem;
+}
 
 /* Active item work*/
 
