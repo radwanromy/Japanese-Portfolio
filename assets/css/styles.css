@@ -623,8 +623,14 @@ img {
 }
 
 /*=============== WORK ===============*/
-.work__container{
+.work__container {
   padding-top: 1rem;
+}
+
+.work__filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Active item work*/
