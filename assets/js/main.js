@@ -61,6 +61,15 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+        breakpoints: {
+            576: {
+              slidesPerView: 2,
+            },
+            768: {
+              slidesPerView:2,
+              spaceBetween: 48,
+            },
+          },
       });
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 

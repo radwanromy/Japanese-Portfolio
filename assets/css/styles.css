@@ -716,7 +716,21 @@ img {
   background-color: var(--first-color);
  }
  
+ .swiper-button-next-bullet {
+  background-color: var(--text-color-light);
+ }
 
+
+ .swiper-button-prev-bullet {
+  background-color: var(--text-color-light);
+ }
+
+ .swiper-button-prev-bullet-active {
+  background-color: var(--first-color);
+ }
+ .swiper-button-next-bullet-active {
+  background-color: var(--first-color);
+ }
 
 /*=============== CONTACT ===============*/
 
