@@ -643,6 +643,11 @@ img {
   border-radius: .5rem;
 }
 
+.work__card{
+  background-color: var(--container-color);
+  padding:1rem;
+  border-radius: 1rem;
+}
 
 /* Active item work*/
 
