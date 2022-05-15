@@ -45,11 +45,11 @@ let mixerPortfolio = mixitup('.work__container', {
 const linkWork = document.querySelectorAll('.work__item')
 
 function activeWork() {
-    lineWork.forEach(l => l.classList.remove('active-work'))
+    linkWork.forEach(l => l.classList.remove('active-work'))
     this.classList.add('active-work')
 }
 
-lineWork.forEach(l => l.addEventListener('click', activeWork))
+linkWork.forEach(l => l.addEventListener('click', activeWork))
 /*=============== SWIPER TESTIMONIAL ===============*/
 
 
