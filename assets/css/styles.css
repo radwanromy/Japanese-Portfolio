@@ -635,7 +635,7 @@ img {
   margin-bottom: 2rem;
 }
 
-.work__item{
+.work__item {
   cursor: pointer;
   color: var(--title-color);
   padding: .25rem .75rem;
@@ -643,11 +643,18 @@ img {
   border-radius: .5rem;
 }
 
-.work__card{
+.work__card {
   background-color: var(--container-color);
-  padding:1rem;
+  padding: 1rem;
   border-radius: 1rem;
 }
+
+.work__img {
+  border-radius: 1rem;
+  margin-bottom: .75rem;
+}
+
+
 
 /* Active item work*/
 
