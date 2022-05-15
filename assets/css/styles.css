@@ -660,6 +660,15 @@ img {
   margin-bottom: .25rem;
 }
 
+.work__button {
+  width: max-content;
+  color: var(--first-color);
+  font-size: var(--small-font-size);
+  display: flex;
+  align-items: center;
+  column-gap: .25rem;
+}
+
 /* Active item work*/
 
 
