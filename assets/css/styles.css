@@ -670,7 +670,7 @@ img {
 }
 
 .work__button:hover .work__icon {
-  transform: translate(.25rem);
+  transform: translateX(.5rem);
 }
 
 .work__icon {
@@ -679,7 +679,10 @@ img {
 }
 
 /* Active item work*/
-
+.active-work {
+  color: var(--body-color);
+  background-color: var(--first-color);
+}
 
 /*=============== TESTIMONIAL ===============*/
 
