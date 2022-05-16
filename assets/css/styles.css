@@ -821,7 +821,7 @@ img {
 
 .contact__form-tag {
   position: absolute;
-  top: .75rem;
+  top: -.75rem;
   left: 1.25rem;
   font-size: var(--smaller-font-size);
 
@@ -830,10 +830,17 @@ img {
   z-index: 10;
 }
 
+.contact__form-area {
+  height: 11rem;
+}
+
+.contact__form-area textarea {
+  resize: none;
+}
 
 /*=============== FOOTER ===============*/
 
-
+/* 1:47:00 */
 /*=============== SCROLL BAR ===============*/
 
 
