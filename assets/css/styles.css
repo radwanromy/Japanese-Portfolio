@@ -787,6 +787,7 @@ img {
   justify-content: center;
   column-gap: .25rem;
 }
+
 .contact__button:hover .contact__icon {
   transform: translateX(.25rem);
 }
@@ -795,6 +796,7 @@ img {
   font-size: 1rem;
   transition: .4s;
 }
+
 .contact__form-div {
 
   position: relative;
@@ -802,7 +804,7 @@ img {
   height: 4rem;
 }
 
-.contact__form-input{
+.contact__form-input {
   position: absolute;
   top: 0;
   left: 0;
@@ -816,6 +818,19 @@ img {
   border-radius: .75rem;
   z-index: 1;
 }
+
+.contact__form-tag {
+  position: absolute;
+  top: .75rem;
+  left: 1.25rem;
+  font-size: var(--smaller-font-size);
+
+  padding: .25rem;
+  background-color: var(--body-color);
+  z-index: 10;
+}
+
+
 /*=============== FOOTER ===============*/
 
 
