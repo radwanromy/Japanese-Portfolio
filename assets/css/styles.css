@@ -308,7 +308,7 @@ img {
   background: linear-gradient(180deg,
       hsla(var(--first-hue), var(--sat), var(--lig), 1),
       hsla(var(--first-hue), var(--sat), var(--lig), .2));
-  border-radius: 10rem 10rem 1rem 1rem;
+  border-radius: 10rem 10rem 10rem 10rem;
   display: flex;
   align-items: flex-end;
   justify-content: center;
