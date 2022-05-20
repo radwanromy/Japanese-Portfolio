@@ -857,6 +857,14 @@ img {
   margin-bottom: 2rem;
 }
 
+.footer_list {
+  display: flex;
+  justify-content: center;
+  column-gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+
 
 /*=============== SCROLL BAR ===============*/
 
