@@ -416,6 +416,12 @@ img {
   justify-self: center;
 }
 
+.about__imgg {
+  border-radius: 1.5rem;
+  border-color: var(--first-color);
+  justify-self: center;
+}
+
 .about__data {
   text-align: center;
 }
