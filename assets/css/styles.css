@@ -839,6 +839,23 @@ img {
 }
 
 /*=============== FOOTER ===============*/
+.footer {
+  background-color: var(--first-color);
+}
+
+.footer__container {
+  padding: 2rem 0 6rem;
+}
+
+.footer__title,
+.footer__link {
+  color: var(--body-color);
+}
+
+.footer__title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
 
 
 /*=============== SCROLL BAR ===============*/
