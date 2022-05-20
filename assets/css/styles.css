@@ -579,11 +579,12 @@ img {
   font-size: var(--h3-font-size);
   color: var(--first-color);
   margin-bottom: 1rem;
+  align-content: center;
 }
 
 .services__model-description {
   font-size: var(--small-font-size);
-  margin-bottom: 2rem;
+  margin-bottom: 1.8rem;
 }
 
 .services__model-list {
