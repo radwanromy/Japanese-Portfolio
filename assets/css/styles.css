@@ -14,7 +14,7 @@
         Teal: hsl(174, 63%, 62%)
         	Red : hsl (0,100%,50%)
   */
-  --first-hue: 207;
+  --first-hue:207 ;
   --sat: 90%;
   --lig: 72%;
   --second-hue: 219;
