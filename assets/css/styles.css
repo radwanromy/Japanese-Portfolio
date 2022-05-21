@@ -1072,6 +1072,14 @@ body.light-theme {
   .work__img {
     width: 295px;
   }
+  .contact__info{
+    grid-template-columns: 300px;
+    justify-content: center;
+  }
+  .contact__form{
+    width: 360px;
+    margin: 0 auto;
+  }
 
 
 
