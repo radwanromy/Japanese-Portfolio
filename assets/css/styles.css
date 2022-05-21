@@ -142,8 +142,53 @@ body.light-theme{
     Color changes in some parts of 
     the website, in light theme
 ==========*/
+.light-theme .scroll-header{
+  box-shadow: 0 2px 4px hsla(0, 0%, 1%, .1);
+}
 
+.light-theme.nav__menu{
+  background-color: hsla(var(--second-hue), 32%, 90%, .8);
+}
 
+.light-theme.section__subtitle{
+  color: var(--text-color);
+}
+
+.light-theme.home__social-link{
+  box-shadow: 0 2px 8px hsla(var(--second-hue), 48%, 8%, .1));
+}
+.light-theme.home__social::after,
+.light-theme.home__social-link{
+   background-color: var(--title-color);
+}
+.light-theme.home__social-link,
+.light-theme.home__scroll,
+.light-theme.button
+.light-theme.button:hover,
+.light-theme.active-work,
+.light-theme.footer__title,
+.light-theme.footer__link,
+.light-theme.footer__copy{
+  color:var(--title-color);
+}
+.light-theme.about__box{
+  box-shadow: 0 2px 8px hsla(var(--second-hue), 48%, 8%, .1);
+}
+.light-theme.skills__content,
+.light-theme.services__card,
+.light-theme.work__card,
+.light-theme.testimonial__card,
+.light-theme.contact__card
+{
+  box-shadow: 0 2px 8px hsla(var(--second-hue), 48%, 8%, .1);
+}
+
+.light-theme::-webkit-scrollbar{
+  background-color: hsl(var(--second-hue), 8%, 66%);
+}
+.light-theme::-webkit-scrollbar-thumb{
+  background-color: hsl(var(--second-hue), 8%, 54%);
+}
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
@@ -261,7 +306,7 @@ body.light-theme{
       hsla(var(--first-hue), var(--sat), var(--lig), 1),
       hsla(var(--first-hue), var(--sat), var(--lig), .2));
   box-shadow: 0 0 16px hsla(var(--first-hue), var(--sat), var(--lig), .4);
-
+color: var(--title-color);
 }
 
 
