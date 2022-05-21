@@ -1107,6 +1107,13 @@ padding-right: auto;
 
 
 @media screen and (min-width: 767px) {
+  .nav__menu {
+    width: 40%;
+    left: 30%;
+    right: 30%;
+    margin: 0;
+  }
+
   .work__container {
     grid-template-columns: repeat(2, max-content);
   }
