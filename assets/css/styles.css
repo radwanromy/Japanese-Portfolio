@@ -1148,7 +1148,8 @@ body.light-theme {
   }
 
   .about__imgg {
-    width: 350px;
+    width: 512px;
+    height: 290px;
   }
 
   .about__data {
@@ -1177,6 +1178,23 @@ body.light-theme {
   .services__container {
     padding: 5rem 2rem 1.5rem;
   }
+
+  .work__container {
+    gap: 3rem;
+  }
+
+  .work__card {
+    padding: 1.25rem;
+  }
+
+  .work__img {
+    margin-bottom: 1rem;
+  }
+
+  .work__title {
+    margin-bottom: .5rem;
+  }
+
 
 
 
