@@ -864,7 +864,7 @@ img {
   margin-bottom: 2rem;
 }
 
-.footer_list {
+.footer__list {
   display: flex;
   justify-content: center;
   column-gap: 1.5rem;
@@ -885,9 +885,28 @@ img {
   display: inline-flex;
 }
 
+.footer__copy{
+  display: block;
+  margin-top: 4.5rem;
+  color: var(--container-color);
+  text-align: center;
+  font-size: var(--smaller-font-size);
+}
+
 
 /*=============== SCROLL BAR ===============*/
-
+::-webkit-scrollbar{
+  width: .6rem;
+  border-radius: .5rem;
+  background-color: hsl(var(--second-hue), 8%, 38%);
+}
+::-webkit-scrollbar-thumb{
+  background-color: hsl(var(--second-hue), 8%, 26%);
+  border-radius: .5rem;
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: hsl(var(--second-hue), 8%, 20%);
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
