@@ -121,15 +121,28 @@ img {
 }
 
 /*=============== THEME ===============*/
+.change-theme{
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: .3s;
+}
+.change-theme:hover{
+  color: var(--first-color);
+}
 
-
-/*========== Variables Dark theme ==========*/
-
+/*========== Variables light theme ==========*/
+body.light-theme{
+  --title-color: hsl(var(--second-hue), 15%, 15%);
+  --text-color: hsl(var(--second-hue), 8%, 35%);
+  --body-color: hsl(var(--second-hue), 100%, 99%);
+  --container-color:#fff;
+}
 
 /*========== 
     Color changes in some parts of 
     the website, in light theme
 ==========*/
+
 
 
 /*=============== REUSABLE CSS CLASSES ===============*/
