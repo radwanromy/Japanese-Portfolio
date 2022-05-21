@@ -1081,9 +1081,29 @@ body.light-theme {
     margin: 0 auto;
   }
 
-
-
-
 }
 
+
+@media screen and (min-width: 767px) {
+  .work__container{
+    grid-template-columns: repeat(2, max-content);
+  }
+  .contact__container{
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+    column-gap: 3rem;
+  }
+  
+}
 /* For large devices */
+@media screen and (min-width:992px) {
+  .container{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section{
+    padding: 6.5rem 0 1rem;
+  }
+
+  
+}
