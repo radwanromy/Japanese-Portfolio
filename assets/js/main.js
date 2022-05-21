@@ -55,36 +55,36 @@ linkWork.forEach(l => l.addEventListener('click', activeWork))
 
 let swiperTestimonial = new Swiper(".testimonial__container", {
     spaceBetween: 24,
-    loop: true ,
+    loop: true,
     grabCursor: true,
     navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        576: {
+            slidesPerView: 2,
         },
-        breakpoints: {
-            576: {
-              slidesPerView: 2,
-            },
-            768: {
-              slidesPerView:2,
-              spaceBetween: 48,
-            },
-          },
-      });
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 48,
+        },
+    },
+});
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 const sections = document.querySelectorAll('section[id]')
 
-function scrollActive(){
+function scrollActive() {
     const scrollY = window.pageYOffset
 
-    sections.forEach(current =>{
+    sections.forEach(current => {
         const sectionHeight = current.offsetHeight,
-              sectionTop = current.offsetTop - 58,
-              sectionId = current.getAttribute('id')
+            sectionTop = current.offsetTop - 58,
+            sectionId = current.getAttribute('id')
 
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
-        }else{
+        } else {
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
         }
     })
@@ -108,9 +108,9 @@ const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx bx-
 
 // We validate if the user previously chose a topic
 if (selectedTheme) {
-  // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the light
-  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](lightTheme)
-  themeButton.classList[selectedIcon === 'bx bx-moon' ? 'add' : 'remove'](iconTheme)
+    // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the light
+    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](lightTheme)
+    themeButton.classList[selectedIcon === 'bx bx-moon' ? 'add' : 'remove'](iconTheme)
 }
 
 // Activate / deactivate the theme manually with the button
