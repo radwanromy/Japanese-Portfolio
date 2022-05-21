@@ -567,7 +567,7 @@ color: var(--title-color);
   color: var(--first-color);
 }
 
-.skills__namae {
+.skills__name {
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
   line-height: 18px;
@@ -972,9 +972,58 @@ color: var(--title-color);
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
+@media screen and (max-width: 320px) {
+  .nav__menu{
+    padding: 1rem 1.5rem;
+  }
+  .home__buttons{
+    flex-direction: column;
+  }
+  .home__handle{
+    width: 150px;
+  }
+  .home__img{
+    width: 130px;
+  }
+  .about__info{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .skills__box{
+    column-gap: 1rem;
+  }
+  .skills__name{
+    font-size: var(--small-font-size);
+  }
+  .services__container{
+    grid-template-columns: 145px;
+    justify-content: center;
+  }
+  .work__item{
+    font-size: var(--small-font-size);
+  }
+  .work__filters{
+    column-gap: .25rem;
+  }
 
+
+}
 
 /* For medium devices */
-
+@media screen and (min-width: 576px) {
+  .nav__menu{
+    width: 328px;
+    left: 0;
+    right: 0;
+    margin: 0;
+  }
+  .about__info{
+    grid-template-columns: repeat(3, 140px);
+    justify-content: center;
+  }
+  .about__description{
+    padding: 0 5rem;
+  }
+  
+}
 
 /* For large devices */
