@@ -189,6 +189,9 @@ body.light-theme{
 .light-theme::-webkit-scrollbar-thumb{
   background-color: hsl(var(--second-hue), 8%, 54%);
 }
+.light-theme::-webkit-scrollbar-thumb:hover{
+  background-color: hsl(var(--second-hue), 8%, 44%);
+}
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
@@ -236,6 +239,7 @@ body.light-theme{
   width: 100%;
   background-color: var(--body-color);
   z-index: var(--z-fixed);
+  transition: .4s;
 }
 
 .nav {
