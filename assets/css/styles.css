@@ -14,7 +14,7 @@
         Teal: hsl(174, 63%, 62%)
         	Red : hsl (0,100%,50%)
   */
-  --first-hue:207 ;
+  --first-hue: 207;
   --sat: 90%;
   --lig: 72%;
   --second-hue: 219;
@@ -279,10 +279,11 @@ body.light-theme {
   /* justify-content: space-between; */
   justify-content: center;
 
-padding-left: auto;
-padding-right: auto;
+  padding-left: auto;
+  padding-right: auto;
 
 }
+
 /* .nav.nav.container.nav__menu{
   justify-content: center;
 } */
@@ -353,7 +354,7 @@ padding-right: auto;
 /*=============== HOME ===============*/
 .home__container {
   position: relative;
-  row-gap: 4.5rem;
+  row-gap: 2.5rem;
   padding-top: 2rem;
 }
 
@@ -375,7 +376,7 @@ padding-right: auto;
 
 .home__education {
   color: var(--text-color);
-  margin-bottom: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 .home__name {
@@ -508,6 +509,7 @@ padding-right: auto;
   border-radius: 1.5rem;
   border-color: var(--first-color);
   justify-self: center;
+ 
 }
 
 .about__data {
@@ -1130,12 +1132,12 @@ padding-right: auto;
 /* For large devices */
 @media screen and (min-width:992px) {
   .container {
-    margin-left:20px;
-    margin-right:20px;
+    margin-left: 30px;
+    margin-right: 30px;
   }
 
   .section {
-    padding: 6.5rem 0 1rem;
+    padding: 1.5rem 0 1rem;
   }
 
   .section__title {
@@ -1144,7 +1146,7 @@ padding-right: auto;
 
   .nav {
     height: calc(var(--header-height) + 1);
-    
+
   }
 
   .home__handle {
@@ -1223,14 +1225,16 @@ padding-right: auto;
   .work__title {
     margin-bottom: .5rem;
   }
-
+/* 
   .testimonial__container {
     width: 750px;
+    align-items: center;
+   
   }
 
   .testimonial__card {
     padding: 1.5rem 2rem;
-  }
+  } */
 
   .contact__container {
     column-gap: 6rem;
@@ -1241,7 +1245,8 @@ padding-right: auto;
     padding: .4rem;
     border-radius: .5rem;
   }
-  .nav__menu{
+
+  .nav__menu {
     justify-content: center;
   }
 
