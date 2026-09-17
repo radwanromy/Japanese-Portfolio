@@ -195,12 +195,10 @@ body.mid-theme .nav__menu {
   box-shadow: 0 2px 8px hsla(var(--second-hue), 48%, 8%, .1);
 }
 
-:is(.light-theme, .mid-theme, .compact-theme) .home__social::after,
-:is(.light-theme, .mid-theme, .compact-theme) .home__social-link {
+:is(.light-theme, .mid-theme, .compact-theme) .home__social::after {
   background-color: var(--title-color);
 }
 
-:is(.light-theme, .mid-theme, .compact-theme) .home__social-link,
 :is(.light-theme, .mid-theme, .compact-theme) .home__scroll,
 :is(.light-theme, .mid-theme, .compact-theme) .active-work,
 :is(.light-theme, .mid-theme, .compact-theme) .footer__title,
