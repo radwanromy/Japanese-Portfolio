@@ -1,5 +1,5 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ja">
 
 <head>
     <meta charset="UTF-8">
@@ -12,13 +12,54 @@
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
     <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css">
 
+    <!--=============== SEO / SOCIAL PREVIEW ===============-->
+    <meta name="description"
+        content="A.S.M. Radwan（エー エス エム レードワン）のポートフォリオサイト。フルスタックエンジニア / Software Engineer — Spring Boot, Django, React, TypeScript。東京在住。">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="A.S.M. Radwan | Software Engineer Portfolio">
+    <meta property="og:description" content="フルスタックエンジニア A.S.M. Radwan（東京在住）のポートフォリオサイト。">
+    <meta property="og:image" content="https://radwanromy.github.io/Japanese-Portfolio/preview.png">
+    <meta property="og:url" content="https://radwanromy.github.io/Japanese-Portfolio/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://radwanromy.github.io/Japanese-Portfolio/">
 
     <title>エー エス エム レードワン A S M RADWAN</title>
+
+    <!--=============== STRUCTURED DATA (SEO) ===============-->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "A.S.M. Radwan",
+        "alternateName": "エー エス エム レードワン",
+        "jobTitle": "Software Engineer",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Sogo System Research"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Tokyo",
+            "addressCountry": "JP"
+        },
+        "url": "https://radwanromy.github.io/Japanese-Portfolio/",
+        "image": "https://radwanromy.github.io/Japanese-Portfolio/assets/img/272683036_756969881956138_3378238440642238222_n.png",
+        "email": "mailto:radwanromy@gmail.com",
+        "sameAs": [
+            "https://github.com/radwanromy",
+            "https://www.linkedin.com/in/a-s-m-radwan-316597155/",
+            "https://www.facebook.com/radwan.romy.100",
+            "https://www.instagram.com/radwanromy",
+            "https://www.youtube.com/channel/UColDIGGLc7v6E4tZqDEzdXQ"
+        ]
+    }
+    </script>
 </head>
 
 <body>
@@ -30,27 +71,27 @@
             <div class="nav__menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">
+                        <a href="#home" class="nav__link active-link" aria-label="ホーム">
                             <i class='bx bx-home'></i>
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#about" class="nav__link">
+                        <a href="#about" class="nav__link" aria-label="私について">
                             <i class='bx bx-user'></i>
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#skills" class="nav__link">
+                        <a href="#skills" class="nav__link" aria-label="スキル">
                             <i class='bx bx-book'></i>
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#work" class="nav__link">
+                        <a href="#work" class="nav__link" aria-label="ポートフォリオ">
                             <i class='bx bx-briefcase-alt-2'></i>
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#contact" class="nav__link">
+                        <a href="#contact" class="nav__link" aria-label="お問い合わせ">
                             <i class='bx bx-message-square-detail'></i>
                         </a>
                     </li>
@@ -58,7 +99,8 @@
             </div>
 
 
-            <i class='bx bx-moon change-theme' id="theme-button"></i>
+            <i class='bx bx-moon change-theme' id="theme-button" role="button" tabindex="0"
+                aria-label="ライト/ダークテーマを切り替え"></i>
 
 
         </nav>
@@ -84,33 +126,30 @@
                     </div>
                 </div>
                 <div class="home__handle">
-                    <img src="assets/img/272683036_756969881956138_3378238440642238222_n.png" alt="handle"
-                        class="home__img">
+                    <img src="assets/img/272683036_756969881956138_3378238440642238222_n.png"
+                        alt="A.S.M. Radwan（エー エス エム レードワン）のプロフィール写真" class="home__img">
                 </div>
                 <div class="home__social">
 
-                    <a href="https://github.com/radwanromy" target="_blank" class="home__social-link">
+                    <a href="https://github.com/radwanromy" target="_blank" class="home__social-link"
+                        aria-label="GitHub" rel="noopener noreferrer">
                         <i class='bx bxl-github'></i>
                     </a>
                     <a href="https://www.linkedin.com/in/a-s-m-radwan-316597155/" target="_blank"
-                        class="home__social-link">
+                        class="home__social-link" aria-label="LinkedIn" rel="noopener noreferrer">
                         <i class='bx bxl-linkedin-square'></i>
                     </a>
-                    <a href="https://www.facebook.com/radwan.romy.100" target="_blank" class="home__social-link">
+                    <a href="https://www.facebook.com/radwan.romy.100" target="_blank" class="home__social-link"
+                        aria-label="Facebook" rel="noopener noreferrer">
                         <i class='bx bxl-facebook-circle'></i>
                     </a>
-                    <a href="https://www.instagram.com/radwanromy" target="_blank" class="home__social-link">
+                    <a href="https://www.instagram.com/radwanromy" target="_blank" class="home__social-link"
+                        aria-label="Instagram" rel="noopener noreferrer">
                         <i class='bx bxl-instagram-alt'></i>
                     </a>
-                    <a href="" target="_blank" class="home__social-link">
-                        <i class='bx bxl-slack'></i>
-                    </a>
                     <a href="https://www.youtube.com/channel/UColDIGGLc7v6E4tZqDEzdXQ" target="_blank"
-                        class="home__social-link">
+                        class="home__social-link" aria-label="YouTube" rel="noopener noreferrer">
                         <i class='bx bxl-youtube'></i>
-                    </a>
-                    <a href="https://dribbble.com" target="_blank" class="home__social-link">
-                        <i class='bx bxl-dribbble'></i>
                     </a>
 
                 </div>
@@ -314,13 +353,14 @@
             <div class="services__container container grid">
                 <div class="services__card">
                     <h3 class="services__tilte">ウェブサイト <br> デベロッパー</h3>
-                    <span class="services__button">
+                    <button type="button" class="services__button">
                         続きを見る <i class='bx bx-right-arrow-alt services__icon'></i>
-                    </span>
+                    </button>
 
                     <div class="services__model">
                         <div class="services__model-content">
-                            <i class='bx bx-x services__model-close'></i>
+                            <i class='bx bx-x services__model-close' role="button" tabindex="0"
+                                aria-label="閉じる"></i>
 
                             <h3 class="services__model-tilte">ウェブサイト デベロッパー</h3>
                             <p class="services__model-description">
@@ -370,13 +410,14 @@
 
                 <div class="services__card">
                     <h3 class="services__tilte">ウェブサイト <br> デザイナー </h3>
-                    <span class="services__button">
+                    <button type="button" class="services__button">
                         続きを見る <i class='bx bx-right-arrow-alt services__icon'></i>
-                    </span>
+                    </button>
 
                     <div class="services__model">
                         <div class="services__model-content">
-                            <i class='bx bx-x services__model-close'></i>
+                            <i class='bx bx-x services__model-close' role="button" tabindex="0"
+                                aria-label="閉じる"></i>
 
                             <h3 class="services__model-tilte">ウェブサイト デザイナー</h3>
                             <p class="services__model-description">
@@ -430,13 +471,14 @@
 
                 <div class="services__card">
                     <h3 class="services__tilte">フルスタック <br> デベロッパー </h3>
-                    <span class="services__button">
+                    <button type="button" class="services__button">
                         続きを見る <i class='bx bx-right-arrow-alt services__icon'></i>
-                    </span>
+                    </button>
 
                     <div class="services__model">
                         <div class="services__model-content">
-                            <i class='bx bx-x services__model-close'></i>
+                            <i class='bx bx-x services__model-close' role="button" tabindex="0"
+                                aria-label="閉じる"></i>
 
                             <h3 class="services__model-tilte">フルスタック デベロッパー</h3>
                             <p class="services__model-description">
@@ -494,14 +536,14 @@
             <span class="section__subtitle">私のポートフォリオ</span>
             <h2 class="section__title">最近の作品</h2>
             <div class="work__filters">
-                <span class="work__item active-work" data-filter='all'>全て</span>
-                <span class="work__item" data-filter='.web'>ウェブ</span>
-                <span class="work__item" data-filter='.movil'>ソフトウェア</span>
-                <span class="work__item" data-filter='.design'>UI/UXデザイン</span>
+                <button type="button" class="work__item active-work" data-filter='all'>全て</button>
+                <button type="button" class="work__item" data-filter='.web'>ウェブ</button>
+                <button type="button" class="work__item" data-filter='.movil'>ソフトウェア</button>
+                <button type="button" class="work__item" data-filter='.design'>UI/UXデザイン</button>
             </div>
             <div class="work__container container grid">
                 <div class="work__card mix movil">
-                    <img src="./assets/img/w1.png" alt="" class="work__img">
+                    <img src="./assets/img/w1.png" alt="Bank Locker Service project screenshot" class="work__img" loading="lazy">
                     <h3 class="work__title">Bank Locker Service</h3>
                     <a href="https://github.com/radwanromy/LS-FE-ANGULAR" class="work__button">
                         Demo <i class='bx bx-right-arrow-alt work__icon'></i>
@@ -509,7 +551,7 @@
                 </div>
 
                 <div class="work__card mix movil">
-                    <img src="./assets/img/w2.png" alt="" class="work__img">
+                    <img src="./assets/img/w2.png" alt="Travel Tourism project screenshot" class="work__img" loading="lazy">
                     <h3 class="work__title">
 
                         Travel Tourism</h3>
@@ -520,7 +562,7 @@
                 </div>
 
                 <div class="work__card mix web">
-                    <img src="./assets/img/w3.png" alt="" class="work__img">
+                    <img src="./assets/img/w3.png" alt="Blockchain Application Web-3.0 project screenshot" class="work__img" loading="lazy">
                     <h3 class="work__title">Blockchain Application Web-3.0</h3>
                     <a href="https://github.com/radwanromy/Blockchain-Application-Web-3.0-React-Solidity"
                         class="work__button">
@@ -530,7 +572,7 @@
 
 
                 <div class="work__card mix web">
-                    <img src="./assets/img/w4.png" alt="" class="work__img">
+                    <img src="./assets/img/w4.png" alt="Upwork-Sizzle Blog project screenshot" class="work__img" loading="lazy">
                     <h3 class="work__title">Upwork-Sizzle Blog</h3>
                     <a href="https://github.com/radwanromy/Sizzle.gg-Blog-Code-Up-Work" class="work__button">
                         Demo <i class='bx bx-right-arrow-alt work__icon'></i>
@@ -538,7 +580,7 @@
                 </div>
 
                 <div class="work__card mix movil">
-                    <img src="./assets/img/Screenshot (304).png" alt="" class="work__img">
+                    <img src="./assets/img/Screenshot (304).png" alt="Ultimate TMS C# project screenshot" class="work__img" loading="lazy">
                     <h3 class="work__title">Ultimate TMS C# Project</h3>
                     <a href="https://github.com/radwanromy/Ultimate-Travel-Management-System" class="work__button">
                         Demo <i class='bx bx-right-arrow-alt work__icon'></i>
@@ -547,7 +589,7 @@
 
 
                 <div class="work__card mix web">
-                    <img src="./assets/img/w9.png" alt="" class="work__img">
+                    <img src="./assets/img/w9.png" alt="Three.js WebGL 3D website project screenshot" class="work__img" loading="lazy">
                     <h3 class="work__title">
                         Three.js WebGL 3D website</h3>
                     <a href="https://github.com/radwanromy/Three.js-WebGL-3D-website-project-By-A_S_M_Radwan"
@@ -557,7 +599,7 @@
                 </div>
 
                 <div class="work__card mix web">
-                    <img src="./assets/img/w10.png" alt="" class="work__img">
+                    <img src="./assets/img/w10.png" alt="AIUB Cyber Gaming Fest 2019 event site screenshot" class="work__img" loading="lazy">
                     <h3 class="work__title">
                         AIUB Cyber Gaming Fest 2019</h3>
                     <a href="https://cgf.aiubcc.org/" class="work__button">
@@ -566,7 +608,7 @@
                 </div>
 
                 <div class="work__card mix web">
-                    <img src="./assets/img/we23243.png" alt="" class="work__img">
+                    <img src="./assets/img/we23243.png" alt="Responsive Japanese Portfolio project screenshot" class="work__img" loading="lazy">
                     <h3 class="work__title">Responsive日本のPortfolio</h3>
                     <a href="https://github.com/radwanromy/Japanese-Portfolio" class="work__button">
                         Demo <i class='bx bx-right-arrow-alt work__icon'></i>
@@ -574,7 +616,7 @@
                 </div>
 
                 <div class="work__card mix design">
-                    <img src="./assets/img/Rday.jfif" alt="" class="work__img">
+                    <img src="./assets/img/Rday.jfif" alt="Computer Graphics Village View project screenshot" class="work__img" loading="lazy">
                     <h3 class="work__title">
                         Computer Graphics Project C++</h3>
                     <a href="https://github.com/radwanromy/Computer-Graphics-Project-Village-View" class="work__button">
@@ -583,7 +625,7 @@
                 </div>
 
                 <div class="work__card mix web">
-                    <img src="./assets/img/w11.png" alt="" class="work__img">
+                    <img src="./assets/img/w11.png" alt="JARVIS 2.0 Intra ACC Carnival event site screenshot" class="work__img" loading="lazy">
                     <h3 class="work__title">
                         JARVIS 2.0 INTRA ACC CARNIVAL</h3>
                     <a href="https://jarvis.aiubcc.org/" class="work__button">
@@ -593,7 +635,7 @@
 
 
                 <div class="work__card mix web">
-                    <img src="./assets/img/w12.png" alt="" class="work__img">
+                    <img src="./assets/img/w12.png" alt="Crystal Community Center website screenshot" class="work__img" loading="lazy">
                     <h3 class="work__title">
                         Crystal Community Center</h3>
                     <a href="http://crystalcc.unaux.com/" class="work__button">
@@ -601,7 +643,7 @@
                     </a>
                 </div>
                 <div class="work__card mix design">
-                    <img src="./assets/img/ws2.png" alt="" class="work__img">
+                    <img src="./assets/img/ws2.png" alt="Upwork Sizzle Blog 2.0 project screenshot" class="work__img" loading="lazy">
                     <h3 class="work__title">
                         Upwork Job Sizzle-Blog-2.0</h3>
                     <a href="https://www.sizzle.gg/blog/" class="work__button">
@@ -610,16 +652,16 @@
                 </div>
 
                 <div class="work__card mix design">
-                    <img src="./assets/img/testimonial121.png" alt="" class="work__img">
+                    <img src="./assets/img/testimonial121.png" alt="Portal for School/College project screenshot" class="work__img" loading="lazy">
                     <h3 class="work__title">
                         Portal for School/College</h3>
-                    <a href="" class="work__button">
+                    <a href="" class="work__button" aria-disabled="true" onclick="return false;">
                         Demo Link Void <i class='bx bx-right-arrow-alt work__icon'></i>
                     </a>
                 </div>
 
                 <div class="work__card mix web">
-                    <img src="./assets/img/w1321.png" alt="" class="work__img">
+                    <img src="./assets/img/w1321.png" alt="React front-end web design project screenshot" class="work__img" loading="lazy">
                     <h3 class="work__title">
                         React Front-End Web Design</h3>
                     <a href="https://github.com/radwanromy/React-JS-2021-Repository" class="work__button">
@@ -628,7 +670,7 @@
                 </div>
 
                 <div class="work__card mix design">
-                    <img src="./assets/img/wVR.jpg" alt="" class="work__img">
+                    <img src="./assets/img/wVR.jpg" alt="Mixed Reality based model project screenshot" class="work__img" loading="lazy">
                     <h3 class="work__title">
                         Mixed Reality Based Model</h3>
                     <a href="https://www.youtube.com/watch?v=c_BQfjYIBGo&t=20s" class="work__button">
@@ -637,7 +679,7 @@
                 </div>
 
                 <div class="work__card mix design">
-                    <img src="./assets/img/Screenshot (487).png" alt="" class="work__img">
+                    <img src="./assets/img/Screenshot (487).png" alt="Video game built with Lua and LOVE 2D, project screenshot" class="work__img" loading="lazy">
                     <h3 class="work__title">
                         Video-Game-Lua-Love-2D</h3>
                     <a href="https://github.com/aiubian-edge/Spider-Man-VS-The-LizardVideo-Game-Lua-Love-2D"
@@ -647,8 +689,8 @@
                 </div>
 
                 <div class="work__card mix web">
-                    <img src="./assets/img/screencapture-crystalcc-unaux-sciencefreak-2020-10-27-13_35_50.png" alt=""
-                        class="work__img">
+                    <img src="./assets/img/screencapture-crystalcc-unaux-sciencefreak-2020-10-27-13_35_50.png"
+                        alt="Science Olympiad Quiz Portal project screenshot" class="work__img" loading="lazy">
                     <h3 class="work__title">
                         Science Olympiad Quiz Portal</h3>
                     <a href="http://crystalcc.unaux.com/sciencefreak/" class="work__button">
@@ -658,21 +700,21 @@
 
                 <div class="work__card mix web">
                     <img src="./assets/img/screencapture-accwebdev-ezyro-portfolio-cv-templcfbate-2-2021-01-07-01_38_06.png"
-                        alt="" class="work__img">
+                        alt="Personal Portfolio project screenshot" class="work__img" loading="lazy">
                     <h3 class="work__title">
                         Personal Portfolio</h3>
-                    <a href="http://crystalcc.unaux.com/sciencefreak/" class="work__button">
+                    <a href="" class="work__button" aria-disabled="true" onclick="return false;">
                         Demo Link Void <i class='bx bx-right-arrow-alt work__icon'></i>
                     </a>
                 </div>
 
                 <div class="work__card mix web">
-                    <img src="./assets/img/bmi.png" alt="" class="work__img">
+                    <img src="./assets/img/bmi.png" alt="Flutter BMI Calculator app screenshot" class="work__img" loading="lazy">
                     <h3 class="work__title">
                         Flutter App BMI Calculator</h3>
                     <a href="https://github.com/radwanromy/Multiple-Dart-Projects--Practice-Projects/tree/master/bmi"
                         class="work__button">
-                        Demo Link Void <i class='bx bx-right-arrow-alt work__icon'></i>
+                        Demo <i class='bx bx-right-arrow-alt work__icon'></i>
                     </a>
                 </div>
 
@@ -680,7 +722,7 @@
         </section>
         <!-- 1.12.17 -->
         <!--=============== TESTIMONIALS ===============-->
-        <section class="testimonial section">
+        <section class="testimonial section" id="testimonial">
             <span class="section__subtitle">クライアントのフィードバック</span>
             <h2 class="section__title">推薦状</h2>
 
@@ -688,16 +730,16 @@
                 <div class="swiper-wrapper">
 
                     <div class="testimonial__card swiper-slide">
-                        <img src="assets/img/happy-face_4989497.png" alt="" class="testimonial__img">
+                        <img src="assets/img/happy-face_4989497.png" alt="Fujiwara san" class="testimonial__img" loading="lazy">
                         <h3 class="testimonial__name">Fujiwara san,
-                            Former Manager <a href="veriserve">Email</a> </h3>
+                            Former Manager, Veriserve </h3>
                         <p class="testimonial__description">
                             He is master in Linux operations. Linuxオペレーションマスター。</p>
 
                     </div>
 
                     <div class="testimonial__card swiper-slide">
-                        <img src="assets/img/vvvvCapture.png" alt="" class="testimonial__img">
+                        <img src="assets/img/vvvvCapture.png" alt="Vijay Koduri" class="testimonial__img" loading="lazy">
                         <h3 class="testimonial__name"><a
                                 href="https://www.crunchbase.com/person/vijay-koduri?fbclid=IwAR1pfAqjUTZKjmp9lEmneWeZMpuC19Dg9ZGps2Nvt_j3JHbkarDf8btQ5Fs">Vijay
                                 Koduri</a>,Co-Founder of <a
@@ -710,9 +752,9 @@
                     </div>
 
                     <div class="testimonial__card swiper-slide">
-                        <img src="assets/img/1648100370466 - Copy.jfif" alt="" class="testimonial__img">
+                        <img src="assets/img/1648100370466 - Copy.jfif" alt="Plabon Kumar Saha" class="testimonial__img" loading="lazy">
                         <h3 class="testimonial__name">Plabon Kumar Saha,
-                            Software Engineer-BRAC IT, <a href="Plabon.kumar@bracits.com">Email</a> </h3>
+                            Software Engineer-BRAC IT, <a href="mailto:Plabon.kumar@bracits.com">Email</a> </h3>
                         <p class="testimonial__description">
                             私は彼が熱心で素早い学習者であることに気づきました。 彼は優れたデザインセンスを持ち、ソフトウェアエンジニアリングとプログラミング言語の基礎を持っており、概念は非常に明確です。I
                             found him to be eager and quick learner. He has good design sense and his basics in software
@@ -721,8 +763,8 @@
                     </div>
 
                     <div class="testimonial__card swiper-slide">
-                        <img src="assets/img/dfsg85104924_178056013513943_2037466574654275584_n.jpg" alt=""
-                            class="testimonial__img">
+                        <img src="assets/img/dfsg85104924_178056013513943_2037466574654275584_n.jpg"
+                            alt="Dr. Mohammad Ruman" class="testimonial__img" loading="lazy">
                         <h3 class="testimonial__name">Dr. Mohammad Ruman, MBBS, MS</h3>
                         <p class="testimonial__description">
                             彼は私のウェブサイトのいくつかで働いていました。 彼は才能があり経験豊富なWeb開発者です。 彼は仕事がとても上手です。He had worked for some of my
@@ -732,15 +774,16 @@
                     </div>
 
                     <!-- <div class="testimonial__card swiper-slide">
-                        <img src="" alt="" class="testimonial__img">
+                        <img src="" alt="" class="testimonial__img" loading="lazy">
                         <h3 class="testimonial__name">xyz</h3>
                         <p class="testimonial__description">XYZ
                         </p>
 
                     </div> -->
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next" role="button" aria-label="次の推薦状"></div>
+                <div class="swiper-button-prev" role="button" aria-label="前の推薦状"></div>
+                <div class="swiper-pagination"></div>
 
             </div>
         </section>
@@ -759,7 +802,8 @@
                             <h3 class="contact__card-title">Eメール</h3>
                             <span class="contact__card-data">radwanromy@gmail.com</span>
 
-                            <a href="mailto:radwanromy@gmail.com" target="_blank" class="contact__button">
+                            <a href="mailto:radwanromy@gmail.com" target="_blank" class="contact__button"
+                                rel="noopener noreferrer">
                                 私に書いて <i class='bx bx-right-arrow-alt contact__button-icon'></i>
                             </a>
                         </div>
@@ -769,7 +813,8 @@
                             <h3 class="contact__card-title">メッセンジャー</h3>
                             <span class="contact__card-data">Radwan Romy</span>
 
-                            <a href="https://m.me/radwan.romy.100" target="_blank" class="contact__button">
+                            <a href="https://m.me/radwan.romy.100" target="_blank" class="contact__button"
+                                rel="noopener noreferrer">
                                 私に書いて <i class='bx bx-right-arrow-alt contact__button-icon'></i>
                             </a>
                         </div>
@@ -780,7 +825,7 @@
                             <span class="contact__card-data">+817092026067</span>
 
                             <a href="https://api.whatsapp.com/send?phone=817092026067&text=Hello, more information!"
-                                target="_blank" class="contact__button">
+                                target="_blank" class="contact__button" rel="noopener noreferrer">
                                 私に書いて <i class='bx bx-right-arrow-alt contact__button-icon'></i>
                             </a>
                         </div>
@@ -789,23 +834,26 @@
                 <div class="contact__content">
                     <h3 class="contact__title">私にあなたのプロジェクトを書いてください</h3>
 
-                    <form action="" class="contact__form">
+                    <form action="mailto:radwanromy@gmail.com" method="post" enctype="text/plain"
+                        class="contact__form">
                         <div class="contact__form-div">
-                            <label for="" class="contact__form-tag">名前</label>
-                            <input type="text" placeholder="あなたの名前を入力してください" class="contact__form-input">
+                            <label for="contact-name" class="contact__form-tag">名前</label>
+                            <input id="contact-name" name="name" type="text" placeholder="あなたの名前を入力してください"
+                                class="contact__form-input" required>
                         </div>
 
                         <div class="contact__form-div">
-                            <label for="" class="contact__form-tag">Eメール</label>
-                            <input type="email" placeholder="メールアドレスを入力" class="contact__form-input">
+                            <label for="contact-email" class="contact__form-tag">Eメール</label>
+                            <input id="contact-email" name="email" type="email" placeholder="メールアドレスを入力"
+                                class="contact__form-input" required>
                         </div>
 
                         <div class="contact__form-div contact__form-area">
-                            <label for="" class="contact__form-tag">プロジェクト</label>
-                            <textarea name="" id="" cols="30" rows="10" placeholder="プロジェクトの詳細を書く"
-                                class="contact__form-input"></textarea>
+                            <label for="contact-project" class="contact__form-tag">プロジェクト</label>
+                            <textarea id="contact-project" name="project" cols="30" rows="10"
+                                placeholder="プロジェクトの詳細を書く" class="contact__form-input" required></textarea>
                         </div>
-                        <button class="button">メッセージの送信</button>
+                        <button type="submit" class="button">メッセージの送信</button>
                     </form>
 
                 </div>
@@ -830,33 +878,36 @@
 
             </ul>
             <ul class="footer__social">
-                <a href="https://www.facebook.com/radwan.romy.100/" target="_blank" class="footer__social-link">
+                <a href="https://www.facebook.com/radwan.romy.100/" target="_blank" class="footer__social-link"
+                    aria-label="Facebook" rel="noopener noreferrer">
                     <i class='bx bxl-facebook'></i>
                 </a>
 
-                <a href="https://www.instagram.com/radwanromy/" target="_blank" class="footer__social-link">
+                <a href="https://www.instagram.com/radwanromy/" target="_blank" class="footer__social-link"
+                    aria-label="Instagram" rel="noopener noreferrer">
                     <i class='bx bxl-instagram'></i>
                 </a>
 
-                <a href="https://github.com/radwanromy" target="_blank" class="footer__social-link">
+                <a href="https://github.com/radwanromy" target="_blank" class="footer__social-link"
+                    aria-label="GitHub" rel="noopener noreferrer">
                     <i class='bx bxl-github'></i>
                 </a>
 
 
                 <a href="https://bd.linkedin.com/in/a-s-m-radwan-316597155/" target="_blank"
-                    class="footer__social-link">
+                    class="footer__social-link" aria-label="LinkedIn" rel="noopener noreferrer">
                     <i class='bx bxl-linkedin-square'></i>
                 </a>
 
 
                 <a href="https://www.youtube.com/channel/UColDIGGLc7v6E4tZqDEzdXQ" target="_blank"
-                    class="footer__social-link">
+                    class="footer__social-link" aria-label="YouTube" rel="noopener noreferrer">
                     <i class='bx bxl-youtube'></i>
                 </a>
             </ul>
 
             <span class="footer__copy">
-                無断複写・転載を禁じます2022 - <a href="https://github.com/radwanromy">エス エム レードワン</a>
+                無断複写・転載を禁じます 2022–2026 - <a href="https://github.com/radwanromy">エス エム レードワン</a>
             </span>
 
         </div>
@@ -867,7 +918,7 @@
     <script src="assets/js/scrollreveal.min.js"></script>
 
     <!--=============== SWIPER JS ===============-->
-    <script src="/assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
 
     <!--=============== MIXITUP FILTER ===============-->
     <script src="assets/js/mixitup.min.js"></script>
