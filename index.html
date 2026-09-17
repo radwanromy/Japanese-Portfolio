@@ -71,37 +71,49 @@
             <div class="nav__menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link active-link" aria-label="ホーム">
+                        <a href="#home" class="nav__link active-link" data-i18n-aria="nav.home" aria-label="ホーム">
                             <i class='bx bx-home'></i>
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#about" class="nav__link" aria-label="私について">
+                        <a href="#about" class="nav__link" data-i18n-aria="nav.about" aria-label="私について">
                             <i class='bx bx-user'></i>
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#skills" class="nav__link" aria-label="スキル">
+                        <a href="#skills" class="nav__link" data-i18n-aria="nav.skills" aria-label="スキル">
                             <i class='bx bx-book'></i>
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#work" class="nav__link" aria-label="ポートフォリオ">
+                        <a href="#experience" class="nav__link" data-i18n-aria="nav.experience" aria-label="職務経歴">
+                            <i class='bx bx-time-five'></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link" data-i18n-aria="nav.work" aria-label="ポートフォリオ">
                             <i class='bx bx-briefcase-alt-2'></i>
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#contact" class="nav__link" aria-label="お問い合わせ">
+                        <a href="#contact" class="nav__link" data-i18n-aria="nav.contact" aria-label="お問い合わせ">
                             <i class='bx bx-message-square-detail'></i>
                         </a>
                     </li>
                 </ul>
             </div>
 
+            <div class="nav__buttons">
+                <div class="lang-button" id="lang-button" role="button" tabindex="0"
+                    data-i18n-aria="lang.switchLabel" aria-label="言語を切り替え / Switch language">
+                    <span class="lang-button__option" data-lang-option="ja">JA</span>
+                    <span>/</span>
+                    <span class="lang-button__option" data-lang-option="en">EN</span>
+                </div>
 
-            <i class='bx bx-moon change-theme' id="theme-button" role="button" tabindex="0"
-                aria-label="ライト/ダークテーマを切り替え"></i>
-
+                <i class='bx bx-moon change-theme' id="theme-button" role="button" tabindex="0"
+                    aria-label="ライト/ダークテーマを切り替え"></i>
+            </div>
 
         </nav>
 
@@ -115,14 +127,16 @@
             <div class="home__container container grid">
                 <div class="home__data">
 
-                    <span class="home__greeting">こんにちは</span>
-                    <h1 class="home__name">エー エス エム レードワンです。</h1>
-                    <h3 class="home__education">私はフルスタックエンジニアです。</h3>
+                    <span class="home__greeting" data-i18n="home.greeting">こんにちは</span>
+                    <h1 class="home__name" data-i18n="home.name">エー エス エム レードワンです。</h1>
+                    <h3 class="home__education" data-i18n="home.title">私はフルスタックエンジニアです。</h3>
                     <div class="home__buttons">
 
-                        <a download="" href="/Japanese-Portfolio/assets/pdf/Radwan_ASM.pdf" class="button button--ghost"> ダウンロード
+                        <a id="resume-download" download="ASM_Radwan_履歴書.xlsx"
+                            href="assets/files/ASM_Radwan_Rirekisho.xlsx" class="button button--ghost"
+                            data-i18n="home.download"> ダウンロード
                             履歴書</a>
-                        <a href="#about" class="button">私について</a>
+                        <a href="#about" class="button" data-i18n="home.aboutBtn">私について</a>
                     </div>
                 </div>
                 <div class="home__handle">
@@ -155,7 +169,7 @@
                 </div>
                 <a href="#about" class="home__scroll">
                     <i class='bx bx-mouse home__scroll-icon'></i>
-                    <span class="home__scroll-name">下へスクロール</span>
+                    <span class="home__scroll-name" data-i18n="home.scroll">下へスクロール</span>
                 </a>
             </div>
         </section>
@@ -163,8 +177,8 @@
         <!--=============== ABOUT ===============-->
         <section class="about section" id="about">
 
-            <span class="section__subtitle">私のイントロ</span>
-            <h2 class="section__title">私について</h2>
+            <span class="section__subtitle" data-i18n="about.subtitle">私のイントロ</span>
+            <h2 class="section__title" data-i18n="about.title">私について</h2>
             <div class="about__container container grid">
                 <div align="center" style="padding-bottom: 200px;">
                     <!-- <object height="350" width="425" class="about__img">
@@ -186,34 +200,29 @@
                     <div class="about__info">
                         <div class="about__box">
                             <i class='bx bx-award about__icon'></i>
-                            <h3 class="about__title">経験 </h3>
-                            <span class="about__subtitle">ほぼ3年半専門的</span>
+                            <h3 class="about__title" data-i18n="about.box1.title">経験 </h3>
+                            <span class="about__subtitle" data-i18n="about.box1.sub">実務経験5年以上</span>
                         </div>
 
                         <div class="about__box">
                             <i class='bx bx-briefcase-alt about__icon'></i>
-                            <h3 class="about__title">完了</h3>
-                            <span class="about__subtitle">100以上 プロジェクト</span>
+                            <h3 class="about__title" data-i18n="about.box2.title">完了</h3>
+                            <span class="about__subtitle" data-i18n="about.box2.sub">20以上のプロジェクト</span>
                         </div>
 
                         <div class="about__box">
                             <i class='bx bx-badge-check about__icon'></i>
-                            <h3 class="about__title">フリーランサー</h3>
-                            <span class="about__subtitle">ブルーバッジ検証済み</span>
+                            <h3 class="about__title" data-i18n="about.box3.title">資格</h3>
+                            <span class="about__subtitle" data-i18n="about.box3.sub">AWS 認定</span>
                         </div>
                     </div>
 
-                    <p class="about__description">
-
-                        A S M Radwanです。ソフトウェアエンジニアとして3年の職業経験があり、現在は日本に住んでいます。バングラデシュ出身で、現在はSogo System Researchで働いています。ソフトウェア工学の強いバックグラウンドを持っており、特に高度なAI技術の開発において機械学習に強い関心があります。
-
-私の学歴には、BJETでの日本ソフトウェアエンジニア研修プログラムや、宮崎大学での日本語プログラムが含まれています。また、バングラデシュのアメリカン・インターナショナル・ユニバーシティでコンピュータサイエンスとエンジニアリングの学士号を取得しました。
-
-私は、Spring BootとAngular 13を使用したフルスタック開発のプロジェクトに取り組み、Bank Asiaのクレジットカード送金システムを含めています。PyTorchなどのAIフレームワークに関する専門知識とAWS認定資格は、特に多様なデータセットを扱う際に私の技術的な能力をさらに強化しています。さらに、一部の日本のプロジェクトについては、情報を開示することができません。
-これは不可欠であり、サイバーセキュリティとシスコネットワークアカデミーのモノのインターネットは、シスコ、Udemy、Solo-learn、およびUdacityに関するコースも実施しています。私はアプリケーションベースの管理ソフトウェアを持っています。私は、CSEの研究に関連するだけでなく、私の職業生活にも役立つ可能性のある多くの大きなプロジェクトを作成しました。私のソースフリーコードの一部が表示され、<a
-                            href="https://github.com/radwanromy">エー エス エム レードワン Github</a> で機能します。
+                    <p class="about__description i18n-clamp" data-i18n-html="about.description">
+                        A.S.M. ラドワンです。ソフトウェアエンジニアとして日本で3年以上、実務経験は合計5年になります。バングラデシュ出身で、東京在住です。現在は株式会社総合システムリサーチにて、車載・制御系開発や企業向けWeb・基幹システムの開発・運用・保守に携わっています。以前はモチベーションワークス株式会社でクラウド型校務支援システム『BLEND』の開発、Era-InfoTech
+                        Limited（バングラデシュ）では金融機関向けシステム（銀行ロッカー予約・クレジットカード送金）のフルスタック開発を担当しました。Spring Boot、Django、Angular、Reactを中心としたフルスタック開発と、AWSやAIツールを活用した業務効率化を得意としています。日本語はJLPT
+                        N2取得に向けて学習中です。ソースコードの一部は<a href="https://github.com/radwanromy">GitHub</a>で公開しています。
                     </p>
-                    <a href="#contact" class="button">私に連絡して</a>
+                    <a href="#contact" class="button" data-i18n="about.cta">私に連絡して</a>
                 </div>
             </div>
         </section>
@@ -221,18 +230,18 @@
 
         <!--=============== SKILLS ===============-->
         <section class="skills section" id="skills">
-            <span class="section__subtitle">私の能力</span>
-            <h2 class="section__title">私の経験</h2>
+            <span class="section__subtitle" data-i18n="skills.subtitle">私の能力</span>
+            <h2 class="section__title" data-i18n="skills.title">私のスキル</h2>
             <div class="skills__container container grid">
                 <div class="skills__content">
-                    <h3 class="skills__title">フロントエンドの開発者</h3>
+                    <h3 class="skills__title" data-i18n="skills.group.frontend">フロントエンド開発</h3>
                     <div class="skills__box">
                         <div class="skills__group">
                             <div class="skills__data">
                                 <i class='bx bxs-badge-check'></i>
                                 <div>
                                     <h3 class="skills__name">TypeScript</h3>
-                                    <span class="skills__level">プロ</span>
+                                    <span class="skills__level" data-i18n="skills.level.pro">プロ</span>
                                 </div>
                             </div>
 
@@ -240,7 +249,7 @@
                                 <i class='bx bxs-badge-check'></i>
                                 <div>
                                     <h3 class="skills__name">JavaScript</h3>
-                                    <span class="skills__level">プロ</span>
+                                    <span class="skills__level" data-i18n="skills.level.pro">プロ</span>
                                 </div>
                             </div>
 
@@ -248,7 +257,7 @@
                                 <i class='bx bxs-badge-check'></i>
                                 <div>
                                     <h3 class="skills__name">CSS & Bootstrap</h3>
-                                    <span class="skills__level">プロ</span>
+                                    <span class="skills__level" data-i18n="skills.level.pro">プロ</span>
                                 </div>
                             </div>
                         </div>
@@ -258,15 +267,15 @@
                                 <i class='bx bxs-badge-check'></i>
                                 <div>
                                     <h3 class="skills__name">HTML</h3>
-                                    <span class="skills__level">プロ</span>
+                                    <span class="skills__level" data-i18n="skills.level.pro">プロ</span>
                                 </div>
                             </div>
 
                             <div class="skills__data">
                                 <i class='bx bxs-badge-check'></i>
                                 <div>
-                                    <h3 class="skills__name">React & Node</h3>
-                                    <span class="skills__level">中級</span>
+                                    <h3 class="skills__name">React &amp; Angular</h3>
+                                    <span class="skills__level" data-i18n="skills.level.intermediate">中級</span>
                                 </div>
                             </div>
 
@@ -274,7 +283,7 @@
                                 <i class='bx bxs-badge-check'></i>
                                 <div>
                                     <h3 class="skills__name">AJAX & JSON</h3>
-                                    <span class="skills__level">上級</span>
+                                    <span class="skills__level" data-i18n="skills.level.advanced">上級</span>
                                 </div>
                             </div>
 
@@ -284,14 +293,14 @@
                 </div>
 
                 <div class="skills__content">
-                    <h3 class="skills__title">バックエンド開発者</h3>
+                    <h3 class="skills__title" data-i18n="skills.group.backend">バックエンド開発</h3>
                     <div class="skills__box">
                         <div class="skills__group">
                             <div class="skills__data">
                                 <i class='bx bxs-badge-check'></i>
                                 <div>
                                     <h3 class="skills__name">Spring Boot-Java</h3>
-                                    <span class="skills__level">プロ</span>
+                                    <span class="skills__level" data-i18n="skills.level.pro">プロ</span>
                                 </div>
                             </div>
 
@@ -299,7 +308,7 @@
                                 <i class='bx bxs-badge-check'></i>
                                 <div>
                                     <h3 class="skills__name">Django-Python</h3>
-                                    <span class="skills__level">プロ</span>
+                                    <span class="skills__level" data-i18n="skills.level.pro">プロ</span>
                                 </div>
                             </div>
 
@@ -307,7 +316,7 @@
                                 <i class='bx bxs-badge-check'></i>
                                 <div>
                                     <h3 class="skills__name">C++ & OpenGL</h3>
-                                    <span class="skills__level">上級</span>
+                                    <span class="skills__level" data-i18n="skills.level.advanced">上級</span>
                                 </div>
                             </div>
                         </div>
@@ -317,15 +326,15 @@
                                 <i class='bx bxs-badge-check'></i>
                                 <div>
                                     <h3 class="skills__name">PLSQL</h3>
-                                    <span class="skills__level">プロ</span>
+                                    <span class="skills__level" data-i18n="skills.level.pro">プロ</span>
                                 </div>
                             </div>
 
                             <div class="skills__data">
                                 <i class='bx bxs-badge-check'></i>
                                 <div>
-                                    <h3 class="skills__name">SQL & MySQl</h3>
-                                    <span class="skills__level">プロ</span>
+                                    <h3 class="skills__name">SQL & MySQL</h3>
+                                    <span class="skills__level" data-i18n="skills.level.pro">プロ</span>
                                 </div>
                             </div>
 
@@ -333,7 +342,7 @@
                                 <i class='bx bxs-badge-check'></i>
                                 <div>
                                     <h3 class="skills__name">C# & PHP</h3>
-                                    <span class="skills__level">上級</span>
+                                    <span class="skills__level" data-i18n="skills.level.advanced">上級</span>
                                 </div>
                             </div>
 
@@ -341,64 +350,161 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="skills__content">
+                    <h3 class="skills__title" data-i18n="skills.group.cloud">クラウド・ツール</h3>
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">AWS</h3>
+                                    <span class="skills__level" data-i18n="skills.level.advanced">上級</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">Git & CI/CD</h3>
+                                    <span class="skills__level" data-i18n="skills.level.pro">プロ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">Docker</h3>
+                                    <span class="skills__level" data-i18n="skills.level.intermediate">中級</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">Linux</h3>
+                                    <span class="skills__level" data-i18n="skills.level.advanced">上級</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== TIMELINE / CAREER HISTORY ===============-->
+        <section class="timeline section" id="experience">
+            <span class="section__subtitle" data-i18n="timeline.subtitle">私の経歴</span>
+            <h2 class="section__title" data-i18n="timeline.title">職務経歴</h2>
+
+            <div class="timeline__container container">
+                <div class="timeline__card">
+                    <div class="timeline__header">
+                        <div>
+                            <h3 class="timeline__role" data-i18n="timeline.job1.role">ソフトウェアエンジニア</h3>
+                            <span class="timeline__company" data-i18n="timeline.job1.company">株式会社総合システムリサーチ</span>
+                        </div>
+                        <span class="timeline__date" data-i18n="timeline.job1.date">2023年8月 〜 現在（3年2ヶ月）</span>
+                    </div>
+                    <ul class="timeline__duties">
+                        <li data-i18n="timeline.job1.d1">業務・基幹系を中心としたWeb・モバイルシステムの受託開発（自動車業界クライアント含む）</li>
+                        <li data-i18n="timeline.job1.d2">既存システムの保守運用、障害対応・不具合調査</li>
+                        <li data-i18n="timeline.job1.d3">AIツール等を活用した業務効率化</li>
+                        <li data-i18n="timeline.job1.d4">要件整理から詳細設計、DB設計</li>
+                        <li data-i18n="timeline.job1.d5">コーディング、テスト、リリース、手順書の作成</li>
+                    </ul>
+                </div>
+
+                <div class="timeline__card">
+                    <div class="timeline__header">
+                        <div>
+                            <h3 class="timeline__role" data-i18n="timeline.job2.role">ソフトウェアエンジニア</h3>
+                            <span class="timeline__company" data-i18n="timeline.job2.company">モチベーションワークス株式会社</span>
+                        </div>
+                        <span class="timeline__date" data-i18n="timeline.job2.date">2022年12月 〜 2023年3月（4ヶ月）</span>
+                    </div>
+                    <ul class="timeline__duties">
+                        <li data-i18n="timeline.job2.d1">クラウド型校務支援システム『BLEND』の複数モジュールで課題を発見・解決するアプリを開発</li>
+                        <li data-i18n="timeline.job2.d2">新しいモジュールの作成など追加機能の実装を担当</li>
+                        <li data-i18n="timeline.job2.d3">要件対応・設計、コーディング、テスト、リリース</li>
+                        <li data-i18n="timeline.job2.d4">保守運用・障害対応</li>
+                    </ul>
+                </div>
+
+                <div class="timeline__card">
+                    <div class="timeline__header">
+                        <div>
+                            <h3 class="timeline__role" data-i18n="timeline.job3.role">フルスタックエンジニア</h3>
+                            <span class="timeline__company" data-i18n="timeline.job3.company">Era-InfoTech Limited（バングラデシュ）</span>
+                        </div>
+                        <span class="timeline__date" data-i18n="timeline.job3.date">2021年10月 〜 2022年2月（5ヶ月）</span>
+                    </div>
+                    <ul class="timeline__duties">
+                        <li data-i18n="timeline.job3.d1">金融機関向けシステム（銀行ロッカー予約・クレジットカード送金）および社内技術ブログのフルスタック開発</li>
+                        <li data-i18n="timeline.job3.d2">要件定義・設計、DB構築</li>
+                        <li data-i18n="timeline.job3.d3">バックエンド/フロントエンド開発（Django / Angular 13 / MySQL）</li>
+                        <li data-i18n="timeline.job3.d4">テスト・デプロイ・保守運用</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
         <!--=============== SERVICES ===============-->
         <section class="services section">
 
-            <span class="section__subtitle">私のサービス</span>
-            <h2 class="section__title">私が提供しているもの</h2>
+            <span class="section__subtitle" data-i18n="services.subtitle">私のサービス</span>
+            <h2 class="section__title" data-i18n="services.title">私が提供しているもの</h2>
 
             <div class="services__container container grid">
                 <div class="services__card">
-                    <h3 class="services__tilte">ウェブサイト <br> デベロッパー</h3>
+                    <h3 class="services__tilte" data-i18n-html="services.card1.title">ウェブサイト <br> デベロッパー</h3>
                     <button type="button" class="services__button">
-                        続きを見る <i class='bx bx-right-arrow-alt services__icon'></i>
+                        <span data-i18n="services.more">続きを見る</span> <i class='bx bx-right-arrow-alt services__icon'></i>
                     </button>
 
                     <div class="services__model">
                         <div class="services__model-content">
                             <i class='bx bx-x services__model-close' role="button" tabindex="0"
-                                aria-label="閉じる"></i>
+                                data-i18n-aria="services.close" aria-label="閉じる"></i>
 
-                            <h3 class="services__model-tilte">ウェブサイト デベロッパー</h3>
-                            <p class="services__model-description">
-                                私はこれまで、フリーランスとして独立して仕事をしたり、企業のチームと一緒にウェブサイトを作ったりしてきました。仕事内容によって、サイトのデザインやコンテンツ制作を行うフロントエンド開発や、Webサイトの機能を実現するためのコードを記述するバックエンド開発などを担当します。
+                            <h3 class="services__model-tilte" data-i18n="services.card1.modalTitle">ウェブサイト デベロッパー</h3>
+                            <p class="services__model-description" data-i18n="services.card1.desc">
+                                私はこれまで、フリーランスとして独立して仕事をしたり、企業のチームと一緒にウェブサイトを作ったりしてきました。フロントエンドのデザイン・コンテンツ制作から、機能を実現するバックエンド開発まで担当します。
                             </p>
                             <ul class="services__model-list">
                                 <li class="services__model-item">
                                     <i class='bx bx-check services__model-icon'></i>
-                                    <p class="services__model-info">
-                                        1 徹底的なUX調査に基づくWebデザイン。
+                                    <p class="services__model-info" data-i18n="services.card1.li1">
+                                        徹底的なUX調査に基づくWebデザイン
                                     </p>
                                 </li>
 
                                 <li class="services__model-item">
                                     <i class='bx bx-check services__model-icon'></i>
-                                    <p class="services__model-info">
-                                        2 バックエンドのWeb開発
+                                    <p class="services__model-info" data-i18n="services.card1.li2">
+                                        バックエンドのWeb開発
                                     </p>
                                 </li>
 
                                 <li class="services__model-item">
                                     <i class='bx bx-check services__model-icon'></i>
-                                    <p class="services__model-info">
-                                        3 Webサイトの制作・保守
+                                    <p class="services__model-info" data-i18n="services.card1.li3">
+                                        Webサイトの制作・保守
                                     </p>
                                 </li>
 
                                 <li class="services__model-item">
                                     <i class='bx bx-check services__model-icon'></i>
-                                    <p class="services__model-info">
-                                        4 リードを獲得するためのランディングページの設計
+                                    <p class="services__model-info" data-i18n="services.card1.li4">
+                                        リードを獲得するためのランディングページ設計
                                     </p>
                                 </li>
 
                                 <li class="services__model-item">
                                     <i class='bx bx-check services__model-icon'></i>
-                                    <p class="services__model-info">
-                                        5 PIM、CMS、CRMシステムとの連携。
+                                    <p class="services__model-info" data-i18n="services.card1.li5">
+                                        PIM・CMS・CRMシステムとの連携
                                     </p>
                                 </li>
                             </ul>
@@ -409,58 +515,53 @@
                 </div>
 
                 <div class="services__card">
-                    <h3 class="services__tilte">ウェブサイト <br> デザイナー </h3>
+                    <h3 class="services__tilte" data-i18n-html="services.card2.title">ウェブサイト <br> デザイナー </h3>
                     <button type="button" class="services__button">
-                        続きを見る <i class='bx bx-right-arrow-alt services__icon'></i>
+                        <span data-i18n="services.more">続きを見る</span> <i class='bx bx-right-arrow-alt services__icon'></i>
                     </button>
 
                     <div class="services__model">
                         <div class="services__model-content">
                             <i class='bx bx-x services__model-close' role="button" tabindex="0"
-                                aria-label="閉じる"></i>
+                                data-i18n-aria="services.close" aria-label="閉じる"></i>
 
-                            <h3 class="services__model-tilte">ウェブサイト デザイナー</h3>
-                            <p class="services__model-description">
-                                ユーザビリティに基づいた、機能的で魅力的なWebおよびモバイルベースのアプリケーションを開発すること。
-                                マークアップ言語の組み合わせによるWebページの作成。
-                                機能要件定義書や仕様書の作成
-                                モックアップやプロトタイプの作成。
-                                バックエンド開発者のコーディングやトラブルシューティングを支援する。 すべてのブラウザとプラットフォームで一貫性のあるカスケードスタイルシート（CSS）を作成する。
-                                製品のインターフェイスを通して、グラフィックの標準とブランディングを維持する。 新しい技術に関する最新情報の入手 ユーザビリティのベストプラクティスを推進する。
+                            <h3 class="services__model-tilte" data-i18n="services.card2.modalTitle">ウェブサイト デザイナー</h3>
+                            <p class="services__model-description" data-i18n="services.card2.desc">
+                                ユーザビリティに基づいた、機能的で魅力的なWeb・モバイルアプリケーションの開発。マークアップとCSSでのページ制作、モックアップやプロトタイプの作成、バックエンド開発者のサポートまで担当します。
                             </p>
                             <ul class="services__model-list">
                                 <li class="services__model-item">
                                     <i class='bx bx-check services__model-icon'></i>
-                                    <p class="services__model-info">
-                                        1 使いやすさに基づいて、機能的で魅力的なWebベースおよびモバイルベースのアプリケーションを開発します。
+                                    <p class="services__model-info" data-i18n="services.card2.li1">
+                                        使いやすさに基づく機能的で魅力的なアプリ開発
                                     </p>
                                 </li>
 
                                 <li class="services__model-item">
                                     <i class='bx bx-check services__model-icon'></i>
-                                    <p class="services__model-info">
-                                        2 UXの詳細な調査に基づくWebデザイン。
+                                    <p class="services__model-info" data-i18n="services.card2.li2">
+                                        UXの詳細な調査に基づくWebデザイン
                                     </p>
                                 </li>
 
                                 <li class="services__model-item">
                                     <i class='bx bx-check services__model-icon'></i>
-                                    <p class="services__model-info">
-                                        3 フロントエンドWeb開発。
+                                    <p class="services__model-info" data-i18n="services.card2.li3">
+                                        フロントエンドWeb開発
                                     </p>
                                 </li>
 
                                 <li class="services__model-item">
                                     <i class='bx bx-check services__model-icon'></i>
-                                    <p class="services__model-info">
-                                        4 Webサイトを作成および維持します。
+                                    <p class="services__model-info" data-i18n="services.card2.li4">
+                                        Webサイトの作成・維持
                                     </p>
                                 </li>
 
                                 <li class="services__model-item">
                                     <i class='bx bx-check services__model-icon'></i>
-                                    <p class="services__model-info">
-                                        5 リードを獲得するためのランディングページをデザインします。
+                                    <p class="services__model-info" data-i18n="services.card2.li5">
+                                        リードを獲得するためのランディングページ設計
                                     </p>
                                 </li>
                             </ul>
@@ -470,56 +571,53 @@
                 </div>
 
                 <div class="services__card">
-                    <h3 class="services__tilte">フルスタック <br> デベロッパー </h3>
+                    <h3 class="services__tilte" data-i18n-html="services.card3.title">フルスタック <br> デベロッパー </h3>
                     <button type="button" class="services__button">
-                        続きを見る <i class='bx bx-right-arrow-alt services__icon'></i>
+                        <span data-i18n="services.more">続きを見る</span> <i class='bx bx-right-arrow-alt services__icon'></i>
                     </button>
 
                     <div class="services__model">
                         <div class="services__model-content">
                             <i class='bx bx-x services__model-close' role="button" tabindex="0"
-                                aria-label="閉じる"></i>
+                                data-i18n-aria="services.close" aria-label="閉じる"></i>
 
-                            <h3 class="services__model-tilte">フルスタック デベロッパー</h3>
-                            <p class="services__model-description">
-                                フルスタックデベロッパーツールとは、ウェブデベロッパーの幅広い責任に取り組みやすくするシステムやアプリケーションのことです。また、これらのツールを使用して、ダイナミックで機能的なウェブサイトやソフトウェアアプリケーションを作成することができます。Spring
-                                Boot(Java), Angular 13(TypeScript), Django(python), SQL, MySQL, PLSQL, Hibernate,
-                                Oracle、MVCパターンEntity Framework、Bootstrap、JavaScript、HTML、CSS、Web APIなど。
+                            <h3 class="services__model-tilte" data-i18n="services.card3.modalTitle">フルスタック デベロッパー</h3>
+                            <p class="services__model-description" data-i18n="services.card3.desc">
+                                Webデベロッパーの幅広い責任に対応するシステムやアプリケーションを、企画から実装まで一貫して構築します：Spring Boot(Java), Angular 13(TypeScript), Django(Python), SQL, MySQL, PLSQL, Hibernate, Oracle, MVC/Entity Framework, Bootstrap, JavaScript, HTML, CSS, Web APIなど。
                             </p>
                             <ul class="services__model-list">
                                 <li class="services__model-item">
                                     <i class='bx bx-check services__model-icon'></i>
-                                    <p class="services__model-info">
-                                        1 フロントエンド（クライアントサイド）だけでなく、アプリケーションのバックエンド（サーバーサイド）にも携わります。
+                                    <p class="services__model-info" data-i18n="services.card3.li1">
+                                        フロントエンド（クライアントサイド）とバックエンド（サーバーサイド）の両方を担当
                                     </p>
                                 </li>
 
                                 <li class="services__model-item">
                                     <i class='bx bx-check services__model-icon'></i>
-                                    <p class="services__model-info">
-                                        2 データベースからグラフィックデザイン、UI/UX管理まで、幅広いコーディングのニッチに対応。
+                                    <p class="services__model-info" data-i18n="services.card3.li2">
+                                        データベースからUI/UXまで幅広いコーディング領域に対応
                                     </p>
                                 </li>
 
                                 <li class="services__model-item">
                                     <i class='bx bx-check services__model-icon'></i>
-                                    <p class="services__model-info">
-                                        3 Spring Boot(Java), Django(python), SQL, MySQL, PLSQL, Hibernate, Oracle
-                                        などのバックエンドフレームワーク。
+                                    <p class="services__model-info" data-i18n="services.card3.li3">
+                                        バックエンド：Spring Boot(Java), Django(Python), SQL, MySQL, PLSQL, Hibernate, Oracle
                                     </p>
                                 </li>
 
                                 <li class="services__model-item">
                                     <i class='bx bx-check services__model-icon'></i>
-                                    <p class="services__model-info">
-                                        4 Angular 13(TypeScript)、Bootstrap、JavaScript、HTML、CSS、カスタムCSSなどのフロントエンドフレームワーク。
+                                    <p class="services__model-info" data-i18n="services.card3.li4">
+                                        フロントエンド：Angular 13(TypeScript), Bootstrap, JavaScript, HTML, CSS
                                     </p>
                                 </li>
 
                                 <li class="services__model-item">
                                     <i class='bx bx-check services__model-icon'></i>
-                                    <p class="services__model-info">
-                                        5 フロントエンドとバックエンドの両方を開発するための柔軟なリソース。
+                                    <p class="services__model-info" data-i18n="services.card3.li5">
+                                        フロントエンド・バックエンド双方に対応できる柔軟なリソース
                                     </p>
                                 </li>
                             </ul>
@@ -533,13 +631,13 @@
         <!--=============== WORK ===============-->
         <section class="work section" id="work">
 
-            <span class="section__subtitle">私のポートフォリオ</span>
-            <h2 class="section__title">最近の作品</h2>
+            <span class="section__subtitle" data-i18n="work.subtitle">私のポートフォリオ</span>
+            <h2 class="section__title" data-i18n="work.title">最近の作品</h2>
             <div class="work__filters">
-                <button type="button" class="work__item active-work" data-filter='all'>全て</button>
-                <button type="button" class="work__item" data-filter='.web'>ウェブ</button>
-                <button type="button" class="work__item" data-filter='.movil'>ソフトウェア</button>
-                <button type="button" class="work__item" data-filter='.design'>UI/UXデザイン</button>
+                <button type="button" class="work__item active-work" data-filter='all' data-i18n="work.filter.all">全て</button>
+                <button type="button" class="work__item" data-filter='.web' data-i18n="work.filter.web">ウェブ</button>
+                <button type="button" class="work__item" data-filter='.movil' data-i18n="work.filter.software">ソフトウェア</button>
+                <button type="button" class="work__item" data-filter='.design' data-i18n="work.filter.design">UI/UXデザイン</button>
             </div>
             <div class="work__container container grid">
                 <div class="work__card mix movil">
@@ -609,7 +707,7 @@
 
                 <div class="work__card mix web">
                     <img src="./assets/img/we23243.png" alt="Responsive Japanese Portfolio project screenshot" class="work__img" loading="lazy">
-                    <h3 class="work__title">Responsive日本のPortfolio</h3>
+                    <h3 class="work__title" data-i18n="work.portfolioTitle">レスポンシブ日本語ポートフォリオ</h3>
                     <a href="https://github.com/radwanromy/Japanese-Portfolio" class="work__button">
                         Demo <i class='bx bx-right-arrow-alt work__icon'></i>
                     </a>
@@ -723,8 +821,8 @@
         <!-- 1.12.17 -->
         <!--=============== TESTIMONIALS ===============-->
         <section class="testimonial section" id="testimonial">
-            <span class="section__subtitle">クライアントのフィードバック</span>
-            <h2 class="section__title">推薦状</h2>
+            <span class="section__subtitle" data-i18n="testimonial.subtitle">クライアントのフィードバック</span>
+            <h2 class="section__title" data-i18n="testimonial.title">推薦の声</h2>
 
             <div class="testimonial__container container swiper">
                 <div class="swiper-wrapper">
@@ -790,70 +888,70 @@
 
         <!--=============== CONTACT ===============-->
         <section class="contact section" id="contact">
-            <span class="section__subtitle">お問い合わせ先</span>
-            <h2 class="section__title">連絡先</h2>
+            <span class="section__subtitle" data-i18n="contact.subtitle">お問い合わせ先</span>
+            <h2 class="section__title" data-i18n="contact.title">連絡先</h2>
 
             <div class="contact__container container grid">
                 <div class="contact__content">
-                    <h3 class="contact__title">話して</h3>
+                    <h3 class="contact__title" data-i18n="contact.talk">話しましょう</h3>
                     <div class="contact__info">
                         <div class="contact__card">
                             <i class='bx bx-mail-send contact__card-icon'></i>
-                            <h3 class="contact__card-title">Eメール</h3>
+                            <h3 class="contact__card-title" data-i18n="contact.email">Eメール</h3>
                             <span class="contact__card-data">radwanromy@gmail.com</span>
 
                             <a href="mailto:radwanromy@gmail.com" target="_blank" class="contact__button"
                                 rel="noopener noreferrer">
-                                私に書いて <i class='bx bx-right-arrow-alt contact__button-icon'></i>
+                                <span data-i18n="contact.write">私に書いて</span> <i class='bx bx-right-arrow-alt contact__button-icon'></i>
                             </a>
                         </div>
 
                         <div class="contact__card">
                             <i class='bx bxl-messenger contact__card-icon'></i>
-                            <h3 class="contact__card-title">メッセンジャー</h3>
+                            <h3 class="contact__card-title" data-i18n="contact.messenger">メッセンジャー</h3>
                             <span class="contact__card-data">Radwan Romy</span>
 
                             <a href="https://m.me/radwan.romy.100" target="_blank" class="contact__button"
                                 rel="noopener noreferrer">
-                                私に書いて <i class='bx bx-right-arrow-alt contact__button-icon'></i>
+                                <span data-i18n="contact.write">私に書いて</span> <i class='bx bx-right-arrow-alt contact__button-icon'></i>
                             </a>
                         </div>
 
                         <div class="contact__card">
                             <i class='bx bxl-whatsapp contact__card-icon'></i>
-                            <h3 class="contact__card-title">ワッツアップ</h3>
+                            <h3 class="contact__card-title" data-i18n="contact.whatsapp">ワッツアップ</h3>
                             <span class="contact__card-data">+817092026067</span>
 
                             <a href="https://api.whatsapp.com/send?phone=817092026067&text=Hello, more information!"
                                 target="_blank" class="contact__button" rel="noopener noreferrer">
-                                私に書いて <i class='bx bx-right-arrow-alt contact__button-icon'></i>
+                                <span data-i18n="contact.write">私に書いて</span> <i class='bx bx-right-arrow-alt contact__button-icon'></i>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="contact__content">
-                    <h3 class="contact__title">私にあなたのプロジェクトを書いてください</h3>
+                    <h3 class="contact__title" data-i18n="contact.projectTitle">私にあなたのプロジェクトを教えてください</h3>
 
                     <form action="mailto:radwanromy@gmail.com" method="post" enctype="text/plain"
                         class="contact__form">
                         <div class="contact__form-div">
-                            <label for="contact-name" class="contact__form-tag">名前</label>
-                            <input id="contact-name" name="name" type="text" placeholder="あなたの名前を入力してください"
+                            <label for="contact-name" class="contact__form-tag" data-i18n="contact.name">名前</label>
+                            <input id="contact-name" name="name" type="text" data-i18n-placeholder="contact.namePlaceholder" placeholder="あなたの名前を入力してください"
                                 class="contact__form-input" required>
                         </div>
 
                         <div class="contact__form-div">
-                            <label for="contact-email" class="contact__form-tag">Eメール</label>
-                            <input id="contact-email" name="email" type="email" placeholder="メールアドレスを入力"
+                            <label for="contact-email" class="contact__form-tag" data-i18n="contact.email">Eメール</label>
+                            <input id="contact-email" name="email" type="email" data-i18n-placeholder="contact.emailPlaceholder" placeholder="メールアドレスを入力"
                                 class="contact__form-input" required>
                         </div>
 
                         <div class="contact__form-div contact__form-area">
-                            <label for="contact-project" class="contact__form-tag">プロジェクト</label>
+                            <label for="contact-project" class="contact__form-tag" data-i18n="contact.projectLabel">プロジェクト</label>
                             <textarea id="contact-project" name="project" cols="30" rows="10"
-                                placeholder="プロジェクトの詳細を書く" class="contact__form-input" required></textarea>
+                                data-i18n-placeholder="contact.projectPlaceholder" placeholder="プロジェクトの詳細を書く" class="contact__form-input" required></textarea>
                         </div>
-                        <button type="submit" class="button">メッセージの送信</button>
+                        <button type="submit" class="button" data-i18n="contact.send">メッセージの送信</button>
                     </form>
 
                 </div>
@@ -864,16 +962,16 @@
     <!--=============== FOOTER ===============-->
     <footer class="footer">
         <div class="footer__container container">
-            <h1 class="footer__title">レードワン</h1>
+            <h1 class="footer__title" data-i18n="footer.title">レードワン</h1>
             <ul class="footer__list">
                 <li>
-                    <a href="#about" class="footer__link">について</a>
+                    <a href="#about" class="footer__link" data-i18n="footer.about">について</a>
                 </li>
                 <li>
-                    <a href="#work" class="footer__link">プロジェクト</a>
+                    <a href="#work" class="footer__link" data-i18n="footer.projects">プロジェクト</a>
                 </li>
                 <li>
-                    <a href="#testimonial" class="footer__link">推薦状</a>
+                    <a href="#testimonial" class="footer__link" data-i18n="footer.testimonials">推薦状</a>
                 </li>
 
             </ul>
@@ -907,7 +1005,7 @@
             </ul>
 
             <span class="footer__copy">
-                無断複写・転載を禁じます 2022–2026 - <a href="https://github.com/radwanromy">エス エム レードワン</a>
+                <span data-i18n="footer.copy">無断複写・転載を禁じます 2022–2026</span> - <a href="https://github.com/radwanromy">エス エム レードワン</a>
             </span>
 
         </div>
@@ -922,6 +1020,9 @@
 
     <!--=============== MIXITUP FILTER ===============-->
     <script src="assets/js/mixitup.min.js"></script>
+
+    <!--=============== i18n (EN / JA) ===============-->
+    <script src="assets/js/i18n.js"></script>
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
