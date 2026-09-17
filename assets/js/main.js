@@ -101,43 +101,61 @@ function scrollActive() {
 window.addEventListener('scroll', scrollActive)
 
 
-/*=============== LIGHT DARK THEME ===============*/
+/*=============== 4-STATE THEME SWITCHER (night / day / mid / compact) ===============*/
 
 document.addEventListener('DOMContentLoaded', () => {
     const themeButton = document.getElementById('theme-button')
-    const lightTheme = 'light-theme'
-    const iconTheme = 'bx-sun'
 
-    // Ensure the themeButton element exists
     if (!themeButton) {
         console.error('Theme button element not found. Please check your HTML.');
         return;
     }
 
-    // Previously selected topic (if user selected)
-    const selectedTheme = localStorage.getItem('selected-theme')
-    const selectedIcon = localStorage.getItem('selected-icon')
-
-    // We obtain the current theme that the interface has by validating the dark-theme class
-    const getCurrentTheme = () => document.body.classList.contains(lightTheme) ? 'dark' : 'light'
-    const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx bx-moon' : 'bx bx-sun'
-
-    // We validate if the user previously chose a topic
-    if (selectedTheme) {
-        // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the light
-        document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](lightTheme)
-        themeButton.classList[selectedIcon === 'bx bx-moon' ? 'add' : 'remove'](iconTheme)
+    // Ordered theme cycle. 'night' is the default (no body class).
+    const THEMES = ['night', 'light', 'mid', 'compact']
+    const THEME_CLASS = {
+        night: null,
+        light: 'light-theme',
+        mid: 'mid-theme',
+        compact: 'compact-theme',
+    }
+    const THEME_ICON = {
+        night: 'bx-moon',
+        light: 'bx-sun',
+        mid: 'bx-adjust',
+        compact: 'bx-collapse',
+    }
+    const THEME_LABEL = {
+        en: { night: 'Switch to day theme', light: 'Switch to mid theme', mid: 'Switch to compact theme', compact: 'Switch to night theme' },
+        ja: { night: 'ライトテーマに切り替え', light: 'ミッドテーマに切り替え', mid: 'コンパクトテーマに切り替え', compact: 'ナイトテーマに切り替え' },
     }
 
-    // Activate / deactivate the theme manually with the button
+    const applyTheme = (theme) => {
+        Object.values(THEME_CLASS).forEach((cls) => cls && document.body.classList.remove(cls))
+        const cls = THEME_CLASS[theme]
+        if (cls) document.body.classList.add(cls)
+
+        themeButton.className = 'bx ' + THEME_ICON[theme] + ' change-theme'
+        const lang = (document.documentElement.getAttribute('lang') === 'en') ? 'en' : 'ja'
+        themeButton.setAttribute('aria-label', THEME_LABEL[lang][theme])
+
+        document.body.dataset.theme = theme
+        window.dispatchEvent(new CustomEvent('themechange', { detail: { theme } }))
+    }
+
+    let currentTheme = localStorage.getItem('selected-theme')
+    if (!THEMES.includes(currentTheme)) currentTheme = 'night'
+    applyTheme(currentTheme)
+
     themeButton.addEventListener('click', () => {
-        // Add or remove the light / icon theme
-        document.body.classList.toggle(lightTheme)
-        themeButton.classList.toggle(iconTheme)
-        // We save the theme and the current icon that the user chose
-        localStorage.setItem('selected-theme', getCurrentTheme())
-        localStorage.setItem('selected-icon', getCurrentIcon())
+        const idx = THEMES.indexOf(currentTheme)
+        currentTheme = THEMES[(idx + 1) % THEMES.length]
+        applyTheme(currentTheme)
+        localStorage.setItem('selected-theme', currentTheme)
     })
+
+    // Re-apply aria-label wording if the language changes after theme is set
+    window.addEventListener('langchange', () => applyTheme(currentTheme))
 })
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 
