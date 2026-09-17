@@ -61,6 +61,15 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    autoplay: {
+        delay: 6000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+    },
     breakpoints: {
         576: {
             slidesPerView: 2,
@@ -141,3 +150,16 @@ const sr = ScrollReveal({
 sr.reveal(`.home__data`)
 sr.reveal(`.home__handle`,{delay:700})
 sr.reveal(`.home__social, .home__scroll`, {delay: 900, origin: 'bottom'})
+
+/*=============== KEYBOARD SUPPORT FOR ICON "BUTTONS" ===============*/
+// Elements like the theme toggle and modal close icon use role="button"
+// instead of a native <button>, so Enter/Space need to be wired up manually
+// for keyboard and screen-reader users.
+document.querySelectorAll('[role="button"]').forEach((el) => {
+    el.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault()
+            el.click()
+        }
+    })
+})
