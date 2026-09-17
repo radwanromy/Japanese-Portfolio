@@ -146,7 +146,7 @@ textarea:focus-visible,
   color: var(--first-color);
 }
 
-/*========== Variables light theme ==========*/
+/*========== Variables: day (light) theme ==========*/
 body.light-theme {
   --title-color: hsl(var(--second-hue), 15%, 15%);
   --text-color: hsl(var(--second-hue), 8%, 35%);
@@ -154,63 +154,198 @@ body.light-theme {
   --container-color: #fff;
 }
 
-/*========== 
-    Color changes in some parts of 
-    the website, in light theme
+/*========== Variables: mid (twilight) theme ==========*/
+body.mid-theme {
+  --title-color: hsl(var(--second-hue), 15%, 92%);
+  --text-color: hsl(var(--second-hue), 10%, 74%);
+  --text-color-light: hsl(var(--second-hue), 6%, 62%);
+  --body-color: hsl(var(--second-hue), 22%, 22%);
+  --container-color: hsl(var(--second-hue), 20%, 27%);
+}
+
+/*========== Variables: compact theme (bright + dense) ==========*/
+body.compact-theme {
+  --title-color: hsl(var(--second-hue), 15%, 16%);
+  --text-color: hsl(var(--second-hue), 10%, 32%);
+  --body-color: hsl(var(--second-hue), 60%, 97%);
+  --container-color: #fff;
+}
+
+/*==========
+    Color changes in some parts of
+    the website, for day / mid / compact themes
 ==========*/
-.light-theme .scroll-header {
+:is(.light-theme, .mid-theme, .compact-theme) .scroll-header {
   box-shadow: 0 2px 4px hsla(0, 0%, 1%, .1);
 }
 
-.light-theme.nav__menu {
+:is(.light-theme, .mid-theme, .compact-theme) .nav__menu {
   background-color: hsla(var(--second-hue), 32%, 90%, .8);
 }
 
-.light-theme.section__subtitle {
+body.mid-theme .nav__menu {
+  background-color: hsla(var(--second-hue), 22%, 22%, .8);
+}
+
+:is(.light-theme, .mid-theme, .compact-theme) .section__subtitle {
   color: var(--text-color);
 }
 
-.light-theme.home__social-link {
+:is(.light-theme, .mid-theme, .compact-theme) .home__social-link {
   box-shadow: 0 2px 8px hsla(var(--second-hue), 48%, 8%, .1);
 }
 
-.light-theme.home__social::after,
-.light-theme.home__social-link {
+:is(.light-theme, .mid-theme, .compact-theme) .home__social::after,
+:is(.light-theme, .mid-theme, .compact-theme) .home__social-link {
   background-color: var(--title-color);
 }
 
-.light-theme.home__social-link,
-.light-theme.home__scroll,
-.light-theme.button .light-theme.button:hover,
-.light-theme.active-work,
-.light-theme.footer__title,
-.light-theme.footer__link,
-.light-theme.footer__copy {
+:is(.light-theme, .mid-theme, .compact-theme) .home__social-link,
+:is(.light-theme, .mid-theme, .compact-theme) .home__scroll,
+:is(.light-theme, .mid-theme, .compact-theme) .active-work,
+:is(.light-theme, .mid-theme, .compact-theme) .footer__title,
+:is(.light-theme, .mid-theme, .compact-theme) .footer__link,
+:is(.light-theme, .mid-theme, .compact-theme) .footer__copy {
   color: var(--title-color);
 }
 
-.light-theme.about__box {
+:is(.light-theme, .mid-theme, .compact-theme) .about__box,
+:is(.light-theme, .mid-theme, .compact-theme) .skills__content,
+:is(.light-theme, .mid-theme, .compact-theme) .services__card,
+:is(.light-theme, .mid-theme, .compact-theme) .work__card,
+:is(.light-theme, .mid-theme, .compact-theme) .testimonial__card,
+:is(.light-theme, .mid-theme, .compact-theme) .contact__card,
+:is(.light-theme, .mid-theme, .compact-theme) .timeline__card {
   box-shadow: 0 2px 8px hsla(var(--second-hue), 48%, 8%, .1);
 }
 
-.light-theme.skills__content,
-.light-theme.services__card,
-.light-theme.work__card,
-.light-theme.testimonial__card,
-.light-theme.contact__card {
-  box-shadow: 0 2px 8px hsla(var(--second-hue), 48%, 8%, .1);
-}
-
-.light-theme::-webkit-scrollbar {
+:is(.light-theme, .mid-theme, .compact-theme)::-webkit-scrollbar {
   background-color: hsl(var(--second-hue), 8%, 66%);
 }
 
-.light-theme::-webkit-scrollbar-thumb {
+:is(.light-theme, .mid-theme, .compact-theme)::-webkit-scrollbar-thumb {
   background-color: hsl(var(--second-hue), 8%, 54%);
 }
 
-.light-theme::-webkit-scrollbar-thumb:hover {
+:is(.light-theme, .mid-theme, .compact-theme)::-webkit-scrollbar-thumb:hover {
   background-color: hsl(var(--second-hue), 8%, 44%);
+}
+
+/*=============== LANGUAGE SWITCHER ===============*/
+.lang-button {
+  display: flex;
+  align-items: center;
+  column-gap: .15rem;
+  font-size: var(--tiny-font-size);
+  font-weight: var(--font-semibold);
+  cursor: pointer;
+  transition: .3s;
+  border: 1px solid var(--text-color-light);
+  border-radius: 1rem;
+  padding: .2rem .55rem;
+  margin-right: .5rem;
+  color: var(--text-color);
+}
+
+.lang-button:hover {
+  color: var(--first-color);
+  border-color: var(--first-color);
+}
+
+.lang-button__option {
+  opacity: .45;
+}
+
+.lang-button__option.is-active {
+  opacity: 1;
+  color: var(--first-color);
+}
+
+.nav__buttons {
+  display: flex;
+  align-items: center;
+}
+
+/*=============== COMPACT THEME: density + condensed details ===============*/
+body.compact-theme {
+  --biggest-font-size: 1.5rem;
+  --h1-font-size: 1.25rem;
+  --h2-font-size: 1.1rem;
+  --h3-font-size: .9rem;
+  --normal-font-size: .85rem;
+  --small-font-size: .75rem;
+  --smaller-font-size: .7rem;
+}
+
+body.compact-theme .section {
+  padding: 3rem 0 .5rem;
+}
+
+body.compact-theme .section__title {
+  margin-bottom: 1rem;
+}
+
+body.compact-theme .grid {
+  gap: .75rem;
+}
+
+body.compact-theme .about__info,
+body.compact-theme .skills__box,
+body.compact-theme .services__container,
+body.compact-theme .work__container,
+body.compact-theme .contact__info {
+  gap: .6rem;
+}
+
+body.compact-theme .about__box,
+body.compact-theme .skills__content,
+body.compact-theme .services__card,
+body.compact-theme .work__card,
+body.compact-theme .testimonial__card,
+body.compact-theme .contact__card,
+body.compact-theme .timeline__card {
+  padding: .85rem;
+}
+
+body.compact-theme .home__img {
+  width: 150px;
+}
+
+/* Condense long text details in compact mode, with a "read more" affordance */
+body.compact-theme .i18n-clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+body.compact-theme .i18n-clamp.is-expanded {
+  -webkit-line-clamp: unset;
+  overflow: visible;
+}
+
+.i18n-clamp-toggle {
+  display: none;
+  margin-top: .35rem;
+  font-size: var(--smaller-font-size);
+  color: var(--first-color);
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+body.compact-theme .i18n-clamp-toggle {
+  display: inline-block;
+}
+
+body.compact-theme .timeline__duties li {
+  display: none;
+}
+
+body.compact-theme .timeline__duties li:first-child {
+  display: list-item;
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
@@ -619,6 +754,61 @@ body.light-theme {
 .skills__level {
 
   font-size: var(--tiny-font-size);
+}
+
+/*=============== TIMELINE (CAREER / EXPERIENCE) ===============*/
+.timeline__container {
+  row-gap: 1.5rem;
+  padding-top: 1rem;
+}
+
+.timeline__card {
+  background-color: var(--container-color);
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+  position: relative;
+  border-left: 3px solid var(--first-color);
+}
+
+.timeline__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  column-gap: 1rem;
+  margin-bottom: .5rem;
+}
+
+.timeline__role {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-semibold);
+  color: var(--title-color);
+}
+
+.timeline__company {
+  font-size: var(--small-font-size);
+  color: var(--first-color);
+  font-weight: var(--font-medium);
+}
+
+.timeline__date {
+  font-size: var(--tiny-font-size);
+  color: var(--text-color-light);
+  white-space: nowrap;
+}
+
+.timeline__duties {
+  padding-left: 1.1rem;
+  margin-top: .5rem;
+}
+
+.timeline__duties li {
+  list-style: disc;
+  display: list-item;
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+  margin-bottom: .35rem;
+  line-height: 1.4;
 }
 
 /*=============== SERVICES ===============*/
