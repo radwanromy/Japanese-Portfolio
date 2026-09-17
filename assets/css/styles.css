@@ -114,11 +114,25 @@ button {
   cursor: pointer;
   border: none;
   outline: none;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-align: inherit;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+/*=============== ACCESSIBLE FOCUS STATE ===============*/
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+.work__item:focus-visible {
+  outline: 2px solid var(--first-color);
+  outline-offset: 2px;
 }
 
 /*=============== THEME ===============*/
@@ -476,6 +490,7 @@ body.light-theme {
 .button:hover {
   background-color: var(--first-color-alt);
   color: var(--body-color);
+  transform: translateY(-2px);
 }
 
 .button--ghost {
@@ -488,7 +503,7 @@ body.light-theme {
   transition: .4s; */
 }
 
-.about__container container grid {
+.about__container.container.grid {
   align-content: center;
 }
 
@@ -744,6 +759,12 @@ body.light-theme {
   background-color: var(--container-color);
   padding: 1rem;
   border-radius: 1rem;
+  transition: transform .3s, box-shadow .3s;
+}
+
+.work__card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px hsla(var(--second-hue), 48%, 4%, .45);
 }
 
 .work__img {
