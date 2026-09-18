@@ -647,6 +647,12 @@ body.compact-theme .timeline__duties li:first-child {
   row-gap: 2.5rem;
 }
 
+.about__video {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+
 .about__img {
   width: 220px;
   border-radius: 1.5rem;
@@ -657,7 +663,7 @@ body.compact-theme .timeline__duties li:first-child {
   border-radius: 1.5rem;
   border-color: var(--first-color);
   justify-self: center;
- 
+
 }
 
 .about__data {
@@ -977,6 +983,11 @@ body.compact-theme .timeline__duties li:first-child {
 
 .work__button:hover .work__icon {
   transform: translateX(.5rem);
+}
+
+.work__button--disabled {
+  color: var(--text-color-light);
+  cursor: default;
 }
 
 .work__icon {
@@ -1385,6 +1396,10 @@ body.compact-theme .timeline__duties li:first-child {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     column-gap: 4rem;
+  }
+
+  .about__video {
+    padding-bottom: 0;
   }
 
   .about__imgg {

@@ -132,6 +132,7 @@
         'work.filter.software': { ja: 'ソフトウェア', en: 'Software' },
         'work.filter.design': { ja: 'UI/UXデザイン', en: 'UI/UX Design' },
         'work.portfolioTitle': { ja: 'レスポンシブ日本語ポートフォリオ', en: 'Responsive Japanese Portfolio' },
+        'work.noDemo': { ja: 'デモなし', en: 'No public demo' },
 
         // ---------- TESTIMONIALS ----------
         'testimonial.subtitle': { ja: 'クライアントのフィードバック', en: 'Client Feedback' },

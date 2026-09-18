@@ -180,20 +180,13 @@
             <span class="section__subtitle" data-i18n="about.subtitle">私のイントロ</span>
             <h2 class="section__title" data-i18n="about.title">私について</h2>
             <div class="about__container container grid">
-                <div align="center" style="padding-bottom: 200px;">
-                    <!-- <object height="350" width="425" class="about__img">
-                        <param name="movie" value="https://youtu.be/jUARVMBWEts">
-                        <param name="wmode" value="transparent">
-                        <embed height="350" src="https://youtu.be/jUARVMBWEts?rel=0" type="application/x-shockwave-flash" width="425" wmode="transparent">
-                        </object> -->
-
-
+                <div class="about__video">
                     <iframe class="about__imgg" width="340" height="193"
-                        src="https://www.youtube.com/embed/jUARVMBWEts?loop=0">
+                        src="https://www.youtube.com/embed/jUARVMBWEts?loop=0"
+                        title="A.S.M. Radwan self-introduction video" loading="lazy"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
                     </iframe>
-
-                    <!-- <a href="https://youtu.be/jUARVMBWEts"></a> -->
-                    <!-- <img src="assets/img/50805604.jfif" alt="" class="about__img" align="center"> -->
                 </div>
 
                 <div class="about__data">
@@ -753,9 +746,7 @@
                     <img src="./assets/img/testimonial121.png" alt="Portal for School/College project screenshot" class="work__img" loading="lazy">
                     <h3 class="work__title">
                         Portal for School/College</h3>
-                    <a href="" class="work__button" aria-disabled="true" onclick="return false;">
-                        Demo Link Void <i class='bx bx-right-arrow-alt work__icon'></i>
-                    </a>
+                    <span class="work__button work__button--disabled" data-i18n="work.noDemo">デモなし</span>
                 </div>
 
                 <div class="work__card mix web">
@@ -801,9 +792,7 @@
                         alt="Personal Portfolio project screenshot" class="work__img" loading="lazy">
                     <h3 class="work__title">
                         Personal Portfolio</h3>
-                    <a href="" class="work__button" aria-disabled="true" onclick="return false;">
-                        Demo Link Void <i class='bx bx-right-arrow-alt work__icon'></i>
-                    </a>
+                    <span class="work__button work__button--disabled" data-i18n="work.noDemo">デモなし</span>
                 </div>
 
                 <div class="work__card mix web">
